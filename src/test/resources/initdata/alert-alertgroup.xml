@@ -146,7 +146,7 @@
 	<md_alert id="131"  name="Windows 2008 SMTP Virtual Server is Unavailable." severity="AMBER" data_type_id="1" />
 	<md_alert id="132"  name="Windows Server 2012 NTFS File System Corrupt" severity="AMBER" data_type_id="1" />
 	<md_alert id="133"  name="WMI is unhealthy" severity="AMBER" data_type_id="1" />
-	<md_alert id="134"  name="Accenture.SNP.Publisher service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="134"  name="ccsip.SNP.Publisher service is stopped" severity="AMBER" data_type_id="1" />
 	<md_alert id="135"  name="An error occurred while starting the query log" severity="AMBER" data_type_id="1" />
 	<md_alert id="136"  name="An SQL job failed to complete successfully" severity="AMBER" data_type_id="1" />
 	<md_alert id="137"  name="APM Write Action Failed to Submit an Event to the Database" severity="AMBER" data_type_id="1" />
@@ -324,7 +324,7 @@
 	<md_alert id="309"  name="Windows Process Activation service is unavailable" severity="AMBER" data_type_id="1" />
 	<md_alert id="310"  name="Windows Remote Management Service Stopped" severity="AMBER" data_type_id="1" />
 	<md_alert id="311"  name="WSUS Control Manager Not Available" severity="AMBER" data_type_id="1" />
-	<md_alert id="312"  name="Accenture.CP.Host service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="312"  name="ccsip.CP.Host service is stopped" severity="AMBER" data_type_id="1" />
 	<md_alert id="313"  name="Access Denied Error" severity="AMBER" data_type_id="1" />
 	<md_alert id="314"  name="AirWatchCloudConnector - Service" severity="AMBER" data_type_id="1" />
 	<md_alert id="315"  name="Alert subscription data source module encountered errors while running." severity="AMBER" data_type_id="1" />

@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dataset>
-    <cf_infrastructure_unit id="1" name="APP" target_entity="com.accenture.coap.master.metadata.domain.metadata.App" target_table="md_app" />
-    <cf_infrastructure_unit id="2" name="SERVER_GROUP" target_entity="com.accenture.coap.master.metadata.domain.metadata.Component" target_table="md_component"  />
-    <cf_infrastructure_unit id="3" name="SERVER" target_entity="com.accenture.coap.master.metadata.domain.metadata.Server" target_table="md_server"  />
+    <cf_infrastructure_unit id="1" name="APP" target_entity="com.ccsip.coap.master.metadata.domain.metadata.App" target_table="md_app" />
+    <cf_infrastructure_unit id="2" name="SERVER_GROUP" target_entity="com.ccsip.coap.master.metadata.domain.metadata.Component" target_table="md_component"  />
+    <cf_infrastructure_unit id="3" name="SERVER" target_entity="com.ccsip.coap.master.metadata.domain.metadata.Server" target_table="md_server"  />
     
     <cf_critical_alert_list id="1" alert_group_id="1"  list_type="InclusionList"/>
     <cf_critical_alert_list id="2" alert_group_id="2"  list_type="InclusionList"/>

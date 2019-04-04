@@ -8,9 +8,9 @@
 <!--     <md_app id="6" air_id="2700" name="MyTimeandExpenses" service_tier="NAO" /> -->
 <!--     <md_app id="7" air_id="2764" name="SCOM" service_tier="AO" /> -->
 <!--     <md_app id="8" air_id="3414" name="SAP Identity Manager" service_tier="NAO" /> -->
-<!--     <md_app id="9" air_id="3560" name="Accenture Alert" service_tier="AO" /> -->
+<!--     <md_app id="9" air_id="3560" name="ccsip Alert" service_tier="AO" /> -->
 <!--     <md_app id="10" air_id="3895" name="CIO Enterprise Scheduling" service_tier="AO" /> -->
-<!--     <md_app id="11" air_id="4229" name="Next Generation accenture.com" service_tier="AO" /> -->
+<!--     <md_app id="11" air_id="4229" name="Next Generation ccsip.com" service_tier="AO" /> -->
 <!--     <md_app id="12" air_id="4699" name="HPDP for AM" service_tier="NAO" /> -->
     
     <md_component id="1" air_id="1964" name="DB Group" app_id="1"/>

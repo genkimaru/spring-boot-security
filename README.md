@@ -12,20 +12,20 @@ spring boot  encapsulate  web container and other spring configs , let the proje
 
  - **Java files**
 	 the whole project is developed following the typical three level model . there are                controller  level . 
-**com.accenture.coap.master.controller** contains all controllers.
+**com.ccsip.coap.master.controller** contains all controllers.
 	 serveice level
-	  **com.accenture.coap.master.metadata.service** contains all services 
-	  **com.accenture.coap.master.service** only contains the service for authentication&authorization 
+	  **com.ccsip.coap.master.metadata.service** contains all services 
+	  **com.ccsip.coap.master.service** only contains the service for authentication&authorization 
 	 repository level
-	 **com.accenture.coap.master.metadata.repository** contains the repositories 
-	 **com.accenture.coap.master.repository** contains the repositories only for 
+	 **com.ccsip.coap.master.metadata.repository** contains the repositories 
+	 **com.ccsip.coap.master.repository** contains the repositories only for 
 	 authentication&authorization 
 	  domain class 
-	 **com.accenture.coap.master.metadata.domain.confdata** contains coap system configurable data domain class  
-	 **com.accenture.coap.master.metadata.domain.metadata** contains coap system metadata domain class
+	 **com.ccsip.coap.master.metadata.domain.confdata** contains coap system configurable data domain class  
+	 **com.ccsip.coap.master.metadata.domain.metadata** contains coap system metadata domain class
 	 other packages
-	**com.accenture.coap.master.component** contains the java config file for spring boot.
-	**com.accenture.coap.master.dto** contains the dto class  
+	**com.ccsip.coap.master.component** contains the java config file for spring boot.
+	**com.ccsip.coap.master.dto** contains the dto class  
 	Test packages
 	the test classes contains level test case of this project. some test class use the DBUnit  framework to  test . which are under  dbunit sub directory.
 	 

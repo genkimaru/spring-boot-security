@@ -39,7 +39,7 @@
     </appender>
 
     <!-- customized logger list -->
-	<logger name="com.accenture.coap.master"  level="${app.log.level}" />
+	<logger name="com.ccsip.coap.master"  level="${app.log.level}" />
 
     <!-- root logger -->
     <root level="info">

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dataset>
-	<user name="a1" password="12345678" email="jianglei.chen1@accenture.com" phone="13000000000" creator="0000" created="2017-07-07" modified_by="0000" modified="2017-07-07"/>
-	<user name="a2" password="12345678" email="jianglei.chen2@accenture.com" phone="13000000000" creator="0000" created="2017-07-07" modified_by="0000" modified="2017-07-07"/>
+	<user name="a1" password="12345678" email="jianglei.chen1@ccsip.com" phone="13000000000" creator="0000" created="2017-07-07" modified_by="0000" modified="2017-07-07"/>
+	<user name="a2" password="12345678" email="jianglei.chen2@ccsip.com" phone="13000000000" creator="0000" created="2017-07-07" modified_by="0000" modified="2017-07-07"/>
 </dataset>
