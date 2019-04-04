@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <cf_infrastructure_unit id="1" name="APP" target_entity="com.accenture.coap.master.metadata.domain.metadata.App" target_table="md_app" />
+    <cf_infrastructure_unit id="2" name="SERVER_GROUP" target_entity="com.accenture.coap.master.metadata.domain.metadata.Component" target_table="md_component"  />
+    <cf_infrastructure_unit id="3" name="SERVER" target_entity="com.accenture.coap.master.metadata.domain.metadata.Server" target_table="md_server"  />
+    
+    <cf_critical_alert_list id="1" alert_group_id="1"  list_type="InclusionList"/>
+    <cf_critical_alert_list id="2" alert_group_id="2"  list_type="InclusionList"/>
+    <cf_critical_alert_list id="3" alert_group_id="3"  list_type="InclusionList"/>
+    <cf_critical_alert_list id="4" alert_group_id="3"  list_type="InclusionList"/>
+    
+    <!-- AppDyn Critical Alert List -->
+    <cf_critical_alert_list id="5" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="6" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="7" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="8" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="9" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="10" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="11" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="12" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="13" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="14" alert_group_id="5" list_type="InclusionList"/>
+	<cf_critical_alert_list id="15" alert_group_id="5" list_type="InclusionList"/>	
+	<!-- SCOM Critical Alert List -->
+	<cf_critical_alert_list id="16" list_type="InclusionList"/>
+	<cf_critical_alert_list id="17" list_type="InclusionList"/>
+	<cf_critical_alert_list id="18" list_type="InclusionList"/>
+	<cf_critical_alert_list id="19" list_type="InclusionList"/>
+	<cf_critical_alert_list id="20" list_type="InclusionList"/>
+	<cf_critical_alert_list id="21" list_type="InclusionList"/>
+	<cf_critical_alert_list id="22" list_type="InclusionList"/>
+	<cf_critical_alert_list id="23" list_type="InclusionList"/>
+	<cf_critical_alert_list id="24" list_type="InclusionList"/>
+	<cf_critical_alert_list id="25" list_type="InclusionList"/>
+	<cf_critical_alert_list id="26" list_type="InclusionList"/>
+	<cf_critical_alert_list id="27" list_type="InclusionList"/>	
+	<cf_critical_alert_list id="28" list_type="InclusionList"/>
+	
+	<!-- 下面是CriticalAlertList和Alert的影射（AdditionalAlert） -->
+    <cf_jt_critical_alert_list_alert critical_alert_list_id="1" alert_id="32" />
+    <cf_jt_critical_alert_list_alert critical_alert_list_id="1" alert_id="33" />
+    <cf_jt_critical_alert_list_alert critical_alert_list_id="1" alert_id="34" />
+    <cf_jt_critical_alert_list_alert critical_alert_list_id="3" alert_id="34" />
+    <cf_jt_critical_alert_list_alert critical_alert_list_id="4" alert_id="34" />
+
+
+
+
+
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="16" alert_id="31" />  
+
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="17" alert_id="31" />  
+
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="18" alert_id="31" /> 
+
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="19" alert_id="31" /> 
+
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="20" alert_id="31" /> 
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="21" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="22" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="23" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="24" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="25" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="26" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="27" alert_id="31" /> 	
+	
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="7" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="8" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="30" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="33" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="53" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="128" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="335" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="370" />
+	<cf_jt_critical_alert_list_alert critical_alert_list_id="28" alert_id="31" /> 	
+	
+	
+	
+	
+	
+	
+    <!-- 下面是存在于现有系统的AlertSource，照搬SOH数据库中的rules创建，所有都是APP Level，即 infrastructure_unit_id=1（APP） -->
+	<!-- WSP Statistic-->
+	<cf_alert_source id="1" air_id="1964"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="1" />
+	<cf_alert_source id="2" air_id="2109"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="2" />
+	<cf_alert_source id="3" air_id="2133"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="3" />
+	<cf_alert_source id="4" air_id="2277"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="4" />
+	<cf_alert_source id="5" air_id="2613"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="5" />
+	<cf_alert_source id="6" air_id="2700"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="6" />
+	<cf_alert_source id="7" air_id="2764"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="7" />
+	<cf_alert_source id="8" air_id="3414"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="8" />
+	<cf_alert_source id="9" air_id="3560"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="9" />
+	<cf_alert_source id="10" air_id="3895"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="10" />
+	<cf_alert_source id="11" air_id="4229"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="11" />
+	<cf_alert_source id="12" air_id="4699"	name="App-Statistical Strategy" red_threshold="3" amber_above_threshold="2" data_type_id="4" infrastructure_unit_id="1" ref_id="12" />
+
+	<!-- AppDyn Critical -->
+	<cf_alert_source id="13" air_id="1964"	name="App-Critical Strategy" critical_alert_list_id="6" data_type_id="3" infrastructure_unit_id="1" ref_id="1" />
+	<cf_alert_source id="14" air_id="2109"	name="App-Critical Strategy" critical_alert_list_id="7" data_type_id="3" infrastructure_unit_id="1" ref_id="2" />
+	<cf_alert_source id="15" air_id="2133"	name="App-Critical Strategy" critical_alert_list_id="8" data_type_id="3" infrastructure_unit_id="1" ref_id="3" />
+	<cf_alert_source id="16" air_id="2277"	name="App-Critical Strategy" critical_alert_list_id="9" data_type_id="3" infrastructure_unit_id="1" ref_id="4" />
+	<cf_alert_source id="17" air_id="2613"	name="App-Critical Strategy" critical_alert_list_id="10" data_type_id="3" infrastructure_unit_id="1" ref_id="5" />
+	<cf_alert_source id="18" air_id="2700"	name="App-Critical Strategy" critical_alert_list_id="5" data_type_id="3" infrastructure_unit_id="1" ref_id="6" />
+	<cf_alert_source id="19" air_id="2764"	name="App-Critical Strategy" critical_alert_list_id="16" data_type_id="3" infrastructure_unit_id="1" ref_id="7" />
+	<cf_alert_source id="20" air_id="3414"	name="App-Critical Strategy" critical_alert_list_id="11" data_type_id="3" infrastructure_unit_id="1" ref_id="8" />
+	<cf_alert_source id="21" air_id="3560"	name="App-Critical Strategy" critical_alert_list_id="12" data_type_id="3" infrastructure_unit_id="1" ref_id="9" />
+	<cf_alert_source id="22" air_id="3895"	name="App-Critical Strategy" critical_alert_list_id="13" data_type_id="3" infrastructure_unit_id="1" ref_id="10" />
+	<cf_alert_source id="23" air_id="4229"	name="App-Critical Strategy" critical_alert_list_id="14" data_type_id="3" infrastructure_unit_id="1" ref_id="11" />
+	<cf_alert_source id="24" air_id="4699"	name="App-Critical Strategy" critical_alert_list_id="15" data_type_id="3" infrastructure_unit_id="1" ref_id="12" />
+
+	<!-- SCOM Critical --> 
+	<cf_alert_source id="25" air_id="1964"  name="App-Critical Strategy" critical_alert_list_id="17" data_type_id="1" infrastructure_unit_id="1" ref_id="1" />
+	<cf_alert_source id="26" air_id="2109"  name="App-Critical Strategy" critical_alert_list_id="18" data_type_id="1" infrastructure_unit_id="1" ref_id="2" />
+	<cf_alert_source id="27" air_id="2133"  name="App-Critical Strategy" critical_alert_list_id="19" data_type_id="1" infrastructure_unit_id="1" ref_id="3" />
+	<cf_alert_source id="28" air_id="2277"  name="App-Critical Strategy" critical_alert_list_id="20" data_type_id="1" infrastructure_unit_id="1" ref_id="4" />
+	<cf_alert_source id="29" air_id="2613"  name="App-Critical Strategy" critical_alert_list_id="21" data_type_id="1" infrastructure_unit_id="1" ref_id="5" />
+	<cf_alert_source id="30" air_id="2700"  name="App-Critical Strategy" critical_alert_list_id="22" data_type_id="1" infrastructure_unit_id="1" ref_id="6" />
+	<cf_alert_source id="31" air_id="2764"  name="App-Critical Strategy" critical_alert_list_id="23" data_type_id="1" infrastructure_unit_id="1" ref_id="7" />
+	<cf_alert_source id="32" air_id="3414"  name="App-Critical Strategy" critical_alert_list_id="24" data_type_id="1" infrastructure_unit_id="1" ref_id="8" />
+	<cf_alert_source id="33" air_id="3560"  name="App-Critical Strategy" critical_alert_list_id="25" data_type_id="1" infrastructure_unit_id="1" ref_id="9" />
+	<cf_alert_source id="34" air_id="3895"  name="App-Critical Strategy" critical_alert_list_id="26" data_type_id="1" infrastructure_unit_id="1" ref_id="10" />
+	<cf_alert_source id="35" air_id="4229"  name="App-Critical Strategy" critical_alert_list_id="27" data_type_id="1" infrastructure_unit_id="1" ref_id="11" />
+	<cf_alert_source id="36" air_id="4699"  name="App-Critical Strategy" critical_alert_list_id="28" data_type_id="1" infrastructure_unit_id="1" ref_id="12" />
+
+	<!-- SCOM Statistic --> 
+	<cf_alert_source id="37" air_id="1964"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="1" />
+	<cf_alert_source id="38" air_id="2109"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="2" />
+	<cf_alert_source id="39" air_id="2133"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="3" />
+	<cf_alert_source id="40" air_id="2277"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="4" />
+	<cf_alert_source id="41" air_id="2613"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="5" />
+	<cf_alert_source id="42" air_id="2700"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="6" />
+	<cf_alert_source id="43" air_id="2764"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="7" />
+	<cf_alert_source id="44" air_id="3414"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="8" />
+	<cf_alert_source id="45" air_id="3560"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="9" />
+	<cf_alert_source id="46" air_id="3895"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="10" />
+	<cf_alert_source id="47" air_id="4229"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="11" />
+	<cf_alert_source id="48" air_id="4699"  name="App-Statistical Strategy" red_threshold="7"  amber_above_threshold="6" data_type_id="1" infrastructure_unit_id="1" ref_id="12" />
+
+
+
+
+
+
+
+
+<!--    	<CF_JT_ALERT_SOURCE_ALERT_SOURCE parent_id="37" child_id="1"/> -->
+<!--     <CF_JT_ALERT_SOURCE_ALERT_SOURCE parent_id="1" child_id="13"/> -->
+<!--     <CF_JT_ALERT_SOURCE_ALERT_SOURCE parent_id="1" child_id="25"/> -->
+    
+
+    
+</dataset>

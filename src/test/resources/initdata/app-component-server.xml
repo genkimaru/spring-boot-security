@@ -1,0 +1,1775 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<!-- APP/Server从SOH数据库迁移过来（ALL）,Component根据Server的Function划分 -->
+	<!-- App -->
+    <md_app id="1" air_id="1964" name="myScheduling" service_tier="AO" />
+    <md_app id="2" air_id="2109" name="ABACUS Demand Supply Management" service_tier="NAO" />
+    <md_app id="3" air_id="2133" name="Enterprise Batch Integration" service_tier="AO" />
+    <md_app id="4" air_id="2277" name="SAP Desktop" service_tier="NAO" />
+    <md_app id="5" air_id="2613" name="Manage myEngagements" service_tier="NAO" />
+    <md_app id="6" air_id="2700" name="MyTimeandExpenses" service_tier="NAO" />
+    <md_app id="7" air_id="2764" name="SCOM" service_tier="AO" />
+    <md_app id="8" air_id="3414" name="SAP Identity Manager" service_tier="NAO" />
+    <md_app id="9" air_id="3560" name="Accenture Alert" service_tier="AO" />
+    <md_app id="10" air_id="3895" name="CIO Enterprise Scheduling" service_tier="AO" />
+    <md_app id="11" air_id="4229" name="Next Generation accenture.com" service_tier="AO" />
+    <md_app id="12" air_id="4699" name="HPDP for AM" service_tier="NAO" />
+    <!-- Component -->
+    <md_component id="1" air_id="1964" name="DB Group" app_id="1"/>
+    <md_component id="2" air_id="1964" name="Web Group" app_id="1"/>
+    <md_component id="3" air_id="1964" name="Application Group" app_id="1"/>
+
+    <md_component id="7" air_id="2109" name="DB Group" app_id="2"/>
+    <md_component id="8" air_id="2109" name="Web Group" app_id="2"/>
+    <md_component id="9" air_id="2109" name="Application Group" app_id="2"/>
+
+    <md_component id="13" air_id="2133" name="DB Group" app_id="3"/>
+    <md_component id="14" air_id="2133" name="Web Group" app_id="3"/>
+    <md_component id="15" air_id="2133" name="Application Group" app_id="3"/>
+    
+    <md_component id="19" air_id="2277" name="DB Group" app_id="4"/>
+    <md_component id="20" air_id="2277" name="Web Group" app_id="4"/>
+    <md_component id="21" air_id="2277" name="Application Group" app_id="4"/>
+    
+    <md_component id="24" air_id="2613" name="DB Group" app_id="5"/>
+    <md_component id="25" air_id="2613" name="Web Group" app_id="5"/>
+    <md_component id="26" air_id="2613" name="Application Group" app_id="5"/>
+    
+    <md_component id="30" air_id="2700" name="DB Group" app_id="6"/>
+    <md_component id="31" air_id="2700" name="Web Group" app_id="6"/>
+    <md_component id="32" air_id="2700" name="Application Group" app_id="6"/>
+
+    <md_component id="36" air_id="2764" name="DB Group" app_id="7"/>
+    <md_component id="37" air_id="2764" name="Web Group" app_id="7"/>
+    <md_component id="38" air_id="2764" name="Application Group" app_id="7"/>
+
+    <md_component id="42" air_id="3414" name="DB Group" app_id="8"/>
+    <md_component id="43" air_id="3414" name="Web Group" app_id="8"/>
+    <md_component id="44" air_id="3414" name="Application Group" app_id="8"/>
+    
+    <md_component id="48" air_id="3560" name="DB Group" app_id="9"/>
+    <md_component id="49" air_id="3560" name="Web Group" app_id="9"/>
+    <md_component id="50" air_id="3560" name="Application Group" app_id="9"/>
+    
+    <md_component id="54" air_id="3895" name="DB Group" app_id="10"/>
+    <md_component id="55" air_id="3895" name="Web Group" app_id="10"/>
+    <md_component id="56" air_id="3895" name="Application Group" app_id="10"/>
+
+    <md_component id="60" air_id="4229" name="DB Group" app_id="11"/>
+    <md_component id="61" air_id="4229" name="Web Group" app_id="11"/>
+    <md_component id="62" air_id="4229" name="Application Group" app_id="11"/>
+    
+    <md_component id="64" air_id="4699" name="DB Group" app_id="12"/>
+    <md_component id="65" air_id="4699" name="Web Group" app_id="12"/>
+    <md_component id="66" air_id="4699" name="Application Group" app_id="12"/>
+
+    <!-- Server -->        
+    <md_server air_id="1964" name="CTCVD6700" component_id="1"/>
+    <md_server air_id="1964" name="CTCVD6701" component_id="1"/>
+    <md_server air_id="1964" name="VA103299" component_id="3"/>
+    <md_server air_id="1964" name="VRTVA23254" component_id="3"/>
+    <md_server air_id="1964" name="VRTVD3584" component_id="1"/>
+    <md_server air_id="1964" name="VRTVW20492" component_id="2"/>
+    <md_server air_id="1964" name="VRTVW20493" component_id="2"/>    
+        
+    <md_server air_id="2109" name="BG6DR5366" component_id="7"/>
+    <md_server air_id="2109" name="BG6DR5489" component_id="8"/>
+    <md_server air_id="2109" name="BG6DS1002" component_id="7"/>
+    <md_server air_id="2109" name="BG6DS1235" component_id="7"/>
+    <md_server air_id="2109" name="BG6VW1087" component_id="8"/>
+    <md_server air_id="2109" name="POFDR1002" component_id="8"/>
+    <md_server air_id="2109" name="POFDR1235" component_id="7"/>
+    <md_server air_id="2109" name="POFDR1236" component_id="7"/>
+    <md_server air_id="2109" name="POFDS1002" component_id="7"/>
+    <md_server air_id="2109" name="POFVD1137" component_id="7"/>
+    <md_server air_id="2109" name="SQL14BG6DS1235" component_id="7"/>
+    <md_server air_id="2109" name="SQL14BG6DS1236" component_id="7"/>
+    <md_server air_id="2109" name="SQL14POFDR1235" component_id="7"/>
+    <md_server air_id="2109" name="SQL14POFDR1236" component_id="7"/>
+    <md_server air_id="2109" name="VRTVW2044" component_id="8"/>
+    <md_server air_id="2109" name="VRTVW5489" component_id="8"/>
+    <md_server air_id="2109" name="VRTVW5649" component_id="8"/>
+    <md_server air_id="2109" name="VRTVD25273" component_id="7"/>
+    <md_server air_id="2109" name="VRTVD25224" component_id="7"/>
+    <md_server air_id="2109" name="VRTVD5364" component_id="7"/>
+    <md_server air_id="2109" name="VRTVD5366" component_id="7"/>
+
+    <md_server air_id="2133" name="BG6VD1010" component_id="13"/>
+    <md_server air_id="2133" name="CTCAP6700" component_id="15"/>
+    <md_server air_id="2133" name="CTCAP6701" component_id="15"/>
+    <md_server air_id="2133" name="CTCVW6441" component_id="14"/>
+    <md_server air_id="2133" name="LRKDS1200" component_id="13"/>
+    <md_server air_id="2133" name="LRKDS1201" component_id="13"/>
+    <md_server air_id="2133" name="LRKVD1202" component_id="13"/>
+    <md_server air_id="2133" name="LRKVD1203" component_id="13"/>
+    <md_server air_id="2133" name="LRKVD1204" component_id="13"/>
+    <md_server air_id="2133" name="POFDR1009" component_id="13"/>
+    <md_server air_id="2133" name="VA102533" component_id="15"/>
+    <md_server air_id="2133" name="VA102535" component_id="15"/>
+    <md_server air_id="2133" name="VA102536" component_id="15"/>
+    <md_server air_id="2133" name="VA102538" component_id="15"/>
+    <md_server air_id="2133" name="VA102539" component_id="15"/>
+    <md_server air_id="2133" name="VA103620" component_id="15"/>
+    <md_server air_id="2133" name="VA103862" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25235" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25236" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25237" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25238" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25239" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25240" component_id="15"/>
+    <md_server air_id="2133" name="VRTVA25271" component_id="15"/>
+    <md_server air_id="2133" name="VRTVW25222" component_id="14"/>
+    <md_server air_id="2133" name="POFDS3722" component_id="13"/>
+
+    <md_server air_id="2277" name="VW103275" component_id="20"/>
+    <md_server air_id="2277" name="VRTVD22056" component_id="19"/>
+    <md_server air_id="2277" name="LRKDSPPR5" component_id="19"/>
+    <md_server air_id="2277" name="LRKSAPPR10" component_id="21"/>
+    <md_server air_id="2277" name="LRKSAPPR7" component_id="21"/>
+    <md_server air_id="2277" name="LRKSAPPR8" component_id="21"/>
+    <md_server air_id="2277" name="LRKSAPPR9" component_id="21"/>
+    <md_server air_id="2277" name="CTCDSOSC5" component_id="19"/>
+    <md_server air_id="2277" name="LRKWSPPR5" component_id="20"/>
+    <md_server air_id="2277" name="LRKWSPPR6" component_id="20"/>
+
+    <md_server air_id="2613" name="VA102081" component_id="26"/>
+    <md_server air_id="2613" name="VRTVD25252" component_id="24"/>
+    <md_server air_id="2613" name="VRTVD20454" component_id="24"/>
+    <md_server air_id="2613" name="CTCDS6024" component_id="24"/>
+    <md_server air_id="2613" name="CTCDS8250" component_id="24"/>
+    <md_server air_id="2613" name="CTCVW6017" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6018" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6019" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6020" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6021" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6022" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6023" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6024" component_id="25"/>
+    <md_server air_id="2613" name="CTCVW6091" component_id="25"/>
+
+    <md_server air_id="2700" name="CTCVW6092" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6093" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6094" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6095" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6096" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6097" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6099" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6270" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6271" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6272" component_id="31"/>    
+    <md_server air_id="2700" name="VD104443" component_id="32"/>
+    <md_server air_id="2700" name="VD104448" component_id="32"/>
+    <md_server air_id="2700" name="VRTVA20208" component_id="32"/>
+    <md_server air_id="2700" name="VRTVW22489" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW25013" component_id="31"/>
+    <md_server air_id="2700" name="CTCAP2104" component_id="32"/>
+    <md_server air_id="2700" name="VRTVW25337" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW25339" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW25672" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW25673" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW6688" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW7906" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW8210" component_id="31"/>
+    <md_server air_id="2700" name="VRTVW8220" component_id="31"/>
+    <md_server air_id="2700" name="VW104437" component_id="32"/>
+    <md_server air_id="2700" name="VW104438" component_id="32"/>
+    <md_server air_id="2700" name="VW104439" component_id="32"/>
+    <md_server air_id="2700" name="VW104440" component_id="32"/>    
+    <md_server air_id="2700" name="VRTVA6950" component_id="30"/>
+    <md_server air_id="2700" name="VRTVA6952" component_id="30"/>
+    <md_server air_id="2700" name="VRTVA6953" component_id="32"/>
+    <md_server air_id="2700" name="CTCVW6070" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6071" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6072" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6074" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6076" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6077" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6078" component_id="31"/>
+    <md_server air_id="2700" name="CTCVW6079" component_id="31"/>
+
+    <md_server air_id="2764" name="CTCVA1021" component_id="38"/>
+    <md_server air_id="2764" name="CTCVA1022" component_id="38"/>
+    <md_server air_id="2764" name="VRTVW4123" component_id="37"/>
+    <md_server air_id="2764" name="VRTVW4124" component_id="37"/>
+    <md_server air_id="2764" name="CTCVW6904" component_id="37"/>
+    <md_server air_id="2764" name="STRVA5914" component_id="38"/>
+    <md_server air_id="2764" name="STRVA6125" component_id="38"/>
+    <md_server air_id="2764" name="STRVA6127" component_id="38"/>
+    <md_server air_id="2764" name="STRVA6315" component_id="38"/>
+    <md_server air_id="2764" name="STRVD6105" component_id="36"/>
+    <md_server air_id="2764" name="STRVD6107" component_id="36"/>
+    <md_server air_id="2764" name="STRVW6120" component_id="38"/>
+    <md_server air_id="2764" name="STRVW6313" component_id="37"/>
+    <md_server air_id="2764" name="VRTVA2018" component_id="38"/>
+    <md_server air_id="2764" name="VRTVA25154" component_id="38"/>
+    <md_server air_id="2764" name="VRTVW25085" component_id="37"/> 
+
+    <md_server air_id="3414" name="LRKDSUPR1" component_id="42"/>    
+    <md_server air_id="3414" name="LRKSAUPR1" component_id="42"/>
+    <md_server air_id="3414" name="LRKSAUPR2" component_id="44"/>
+    <md_server air_id="3414" name="LRKDNUPR2" component_id="43"/>
+
+    <md_server air_id="3560" name="VRTVW2140" component_id="49"/>
+    <md_server air_id="3560" name="VRTVW9848" component_id="49"/>
+    <md_server air_id="3560" name="VRTVD2629" component_id="48"/>
+    <md_server air_id="3560" name="VRTVW2625" component_id="49"/>
+    <md_server air_id="3560" name="CTCMW6001" component_id="50"/>
+
+    <md_server air_id="3895" name="VRTVA25006" component_id="56"/>
+    <md_server air_id="3895" name="VRTVA25007" component_id="56"/>
+    <md_server air_id="3895" name="CTCVD6903" component_id="54"/>
+    <md_server air_id="3895" name="CTCVD6904" component_id="54"/>
+    <md_server air_id="3895" name="VW103604" component_id="55"/>
+    <md_server air_id="3895" name="VW103637" component_id="55"/>
+    <md_server air_id="3895" name="VRTVA3854" component_id="56"/>
+    <md_server air_id="3895" name="VRTVA3882" component_id="56"/>
+    <md_server air_id="3895" name="VRTVA3953" component_id="56"/>
+    <md_server air_id="3895" name="VRTVD0001" component_id="54"/>
+    <md_server air_id="3895" name="VRTVD0002" component_id="54"/> 
+    <md_server air_id="3895" name="LRKVA0001" component_id="56"/>
+    <md_server air_id="3895" name="LRKVA0002" component_id="56"/>
+    <md_server air_id="3895" name="VRTVA0001" component_id="56"/>
+    <md_server air_id="3895" name="VRTVA0002" component_id="56"/>
+    <md_server air_id="3895" name="VA103574" component_id="56"/>
+    <md_server air_id="3895" name="VA103602" component_id="56"/>
+    <md_server air_id="3895" name="VA103603" component_id="56"/>
+    <md_server air_id="3895" name="VRTVD3997" component_id="54"/>
+    <md_server air_id="3895" name="VRTVD3998" component_id="54"/>
+    <md_server air_id="3895" name="VA104019" component_id="56"/>
+    <md_server air_id="3895" name="VA104020" component_id="56"/>
+    <md_server air_id="3895" name="VA104021" component_id="56"/>
+    <md_server air_id="3895" name="VA104022" component_id="56"/>
+    <md_server air_id="3895" name="VA104536" component_id="56"/>
+    <md_server air_id="3895" name="VA104538" component_id="56"/>
+    <md_server air_id="3895" name="VA104539" component_id="56"/>
+    <md_server air_id="3895" name="VD103580" component_id="54"/>
+    <md_server air_id="3895" name="VD103599" component_id="54"/>
+    <md_server air_id="3895" name="VD103600" component_id="54"/>
+
+    <md_server air_id="4229" name="VRTVD7441" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7494" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7507" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7508" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7510" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7628" component_id="60"/>
+    <md_server air_id="4229" name="VRTVD7639" component_id="60"/>
+    <md_server air_id="4229" name="VRTVW7425" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7427" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7428" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7429" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7471" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7472" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7474" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7493" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7624" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7625" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7627" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW7629" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW8777" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW8778" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW9007" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW9025" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW9626" component_id="61"/>
+    <md_server air_id="4229" name="CTCDC6627" component_id="61"/>
+    <md_server air_id="4229" name="VRTVA25091" component_id="62"/>
+    <md_server air_id="4229" name="VRTVA25092" component_id="62"/>
+    <md_server air_id="4229" name="VRTVA25093" component_id="62"/>
+    <md_server air_id="4229" name="VRTVA22756" component_id="62"/>
+    <md_server air_id="4229" name="VRTVW22783" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW22787" component_id="61"/>
+    <md_server air_id="4229" name="VRTVW22790" component_id="61"/>
+
+    <md_server air_id="4699" name="VA000118" component_id="66"/>
+    <md_server air_id="4699" name="VA000119" component_id="66"/>
+    <md_server air_id="4699" name="VA000179" component_id="66"/>
+    <md_server air_id="4699" name="VA000180" component_id="66"/>
+    <md_server air_id="4699" name="VA000244" component_id="66"/>
+    <md_server air_id="4699" name="VD000122" component_id="65"/>
+    <md_server air_id="4699" name="VD000124" component_id="64"/>
+    <md_server air_id="4699" name="VD000227" component_id="64"/>
+    <md_server air_id="4699" name="VD000256" component_id="64"/>
+    <md_server air_id="4699" name="VD000526" component_id="64"/>
+    <md_server air_id="4699" name="VD000527" component_id="64"/>
+    <md_server air_id="4699" name="VD000685" component_id="64"/>
+    <md_server air_id="4699" name="VD000787" component_id="64"/>
+    <md_server air_id="4699" name="VD000788" component_id="64"/>
+    <md_server air_id="4699" name="VRTVA8612" component_id="66"/>
+    <md_server air_id="4699" name="VRTVA8613" component_id="66"/>
+    <md_server air_id="4699" name="VRTVW8605" component_id="65"/>
+    <md_server air_id="4699" name="VRTVW8608" component_id="65"/>
+    <md_server air_id="4699" name="VRTVW8609" component_id="65"/>
+    <md_server air_id="4699" name="VRTVW8611" component_id="65"/>
+    <md_server air_id="4699" name="VRTVD8616" component_id="64"/>
+    <md_server air_id="4699" name="VRTVD8617" component_id="64"/>
+    <md_server air_id="4699" name="VRTVD8619" component_id="64"/> 
+    <md_server air_id="4699" name="VW000179" component_id="65"/>
+    <md_server air_id="4699" name="VW000180" component_id="65"/>
+    <md_server air_id="4699" name="VW000181" component_id="65"/>
+    <md_server air_id="4699" name="VW000182" component_id="65"/>
+    <md_server air_id="4699" name="VW000183" component_id="65"/>
+    <md_server air_id="4699" name="VW000504" component_id="65"/>
+    <md_server air_id="4699" name="VW000623" component_id="65"/>
+    <md_server air_id="4699" name="VW000624" component_id="65"/>
+    <md_server air_id="4699" name="VW000615" component_id="65"/>
+    <md_server air_id="4699" name="VW000616" component_id="65"/>
+
+
+
+    <!-- 从SOH数据库迁移过来（ALL） -->
+	<md_scom_metric id="1" key="" name="Data File(s) Size (KB)" />
+	<md_scom_metric id="2" key="" name="Private Bytes" />
+	<md_scom_metric id="3" key="" name="DB Log File Allocated Space Left (%)" />
+	<md_scom_metric id="4" key="" name="DB Log File Free Space (MB)" />
+	<md_scom_metric id="5" key="" name="Number of Deadlocks/sec" />
+	<md_scom_metric id="6" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="7" key="" name="Lock Waits/sec" />
+	<md_scom_metric id="8" key="" name="DB Log File Allocated Space Left (MB)" />
+	<md_scom_metric id="9" key="" name="Lock Timeouts/sec" />
+	<md_scom_metric id="10" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="11" key="" name="Number of Deadlocks/sec" />
+	<md_scom_metric id="12" key="" name="Lock Waits/sec" />
+	<md_scom_metric id="13" key="" name="Send Queue % Used" />
+	<md_scom_metric id="14" key="" name="Send Queue Size" />
+	<md_scom_metric id="15" key="" name="DB File Free Space (%)" />
+	<md_scom_metric id="16" key="" name="DB Log File Free Space (%)" />
+	<md_scom_metric id="17" key="" name="DB Total Free Space (%)" />
+	<md_scom_metric id="18" key="" name="DB Allocated Size (MB)" />
+	<md_scom_metric id="19" key="" name="DB File Allocated Space Left (%)" />
+	<md_scom_metric id="20" key="" name="DB Total Free Space (MB)" />
+	<md_scom_metric id="21" key="" name="DB File Allocated Space Left (MB)" />
+	<md_scom_metric id="22" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="23" key="" name="DB File Free Space (MB)" />
+	<md_scom_metric id="24" key="" name="DB File Group Allocated Space Left (%)" />
+	<md_scom_metric id="25" key="" name="DB File Group Free Space (MB)" />
+	<md_scom_metric id="26" key="" name="DB File Group Free Space (%)" />
+	<md_scom_metric id="27" key="" name="DB File Group Allocated Space Left (MB)" />
+	<md_scom_metric id="28" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="29" key="" name="Data File(s) Size (KB)" />
+	<md_scom_metric id="30" key="" name="PercentBandwidthUsedTotal" />
+	<md_scom_metric id="31" key="" name="Workflow Count" />
+	<md_scom_metric id="32" key="" name="Module Count" />
+	<md_scom_metric id="33" key="" name="Lock Timeouts/sec" />
+	<md_scom_metric id="34" key="" name="Enqueued Transport Msgs/sec" />
+	<md_scom_metric id="35" key="" name="SQL SENDs/sec" />
+	<md_scom_metric id="36" key="" name="SQL Re-Compilations/sec" />
+	<md_scom_metric id="37" key="" name="Broker Transaction Rollbacks" />
+	<md_scom_metric id="38" key="" name="SQL RECEIVEs/sec" />
+	<md_scom_metric id="39" key="" name="Message Fragment Receives/sec" />
+	<md_scom_metric id="40" key="" name="Open Connection Count" />
+	<md_scom_metric id="41" key="" name="Receive I/Os/sec" />
+	<md_scom_metric id="42" key="" name="Enqueued Messages/sec" />
+	<md_scom_metric id="43" key="" name="Send I/Os/sec" />
+	<md_scom_metric id="44" key="" name="Lock Requests/sec" />
+	<md_scom_metric id="45" key="" name="Tasks Aborted/sec" />
+	<md_scom_metric id="46" key="" name="Message Fragment Sends/sec" />
+	<md_scom_metric id="47" key="" name="Transactions/sec" />
+	<md_scom_metric id="48" key="" name="Task Limit Reached/sec" />
+	<md_scom_metric id="49" key="" name="Tasks Started/sec" />
+	<md_scom_metric id="50" key="" name="SQL Compilations/sec" />
+	<md_scom_metric id="51" key="" name="Stored Procedures Invoked/sec" />
+	<md_scom_metric id="52" key="" name="Task Limit Reached" />
+	<md_scom_metric id="53" key="" name="Logins/sec" />
+	<md_scom_metric id="54" key="" name="User Connections" />
+	<md_scom_metric id="55" key="" name="Lock Requests/sec" />
+	<md_scom_metric id="56" key="" name="Transactions/sec" />
+	<md_scom_metric id="57" key="" name="SQL Compilations/sec" />
+	<md_scom_metric id="58" key="" name="SQL Re-Compilations/sec" />
+	<md_scom_metric id="59" key="" name="Stored Procedures Invoked/sec" />
+	<md_scom_metric id="60" key="" name="Task Limit Reached" />
+	<md_scom_metric id="61" key="" name="Task Limit Reached/sec" />
+	<md_scom_metric id="62" key="" name="Tasks Aborted/sec" />
+	<md_scom_metric id="63" key="" name="Tasks Started/sec" />
+	<md_scom_metric id="64" key="" name="Broker Transaction Rollbacks" />
+	<md_scom_metric id="65" key="" name="Enqueued Messages/sec" />
+	<md_scom_metric id="66" key="" name="Enqueued Transport Msgs/sec" />
+	<md_scom_metric id="67" key="" name="SQL RECEIVEs/sec" />
+	<md_scom_metric id="68" key="" name="SQL SENDs/sec" />
+	<md_scom_metric id="69" key="" name="Message Fragment Receives/sec" />
+	<md_scom_metric id="70" key="" name="Message Fragment Sends/sec" />
+	<md_scom_metric id="71" key="" name="Open Connection Count" />
+	<md_scom_metric id="72" key="" name="Receive I/Os/sec" />
+	<md_scom_metric id="73" key="" name="Send I/Os/sec" />
+	<md_scom_metric id="74" key="" name="User Connections" />
+	<md_scom_metric id="75" key="" name="PercentBandwidthUsedTotal" />
+	<md_scom_metric id="76" key="" name="Data File(s) Size (KB)" />
+	<md_scom_metric id="77" key="" name="ProcMem" />
+	<md_scom_metric id="78" key="scom.disk.free" name="% Free Space" />
+	<md_scom_metric id="79" key="" name="Free Megabytes" />
+	<md_scom_metric id="80" key="scom.mem.used" name="RAM Percentage Used" />
+	<md_scom_metric id="81" key="" name="DB File Group Free Space (MB)" />
+	<md_scom_metric id="82" key="" name="Current Bandwidth" />
+	<md_scom_metric id="83" key="" name="% Sql Retries / Hour" />
+	<md_scom_metric id="84" key="" name="Disk Bytes/sec" />
+	<md_scom_metric id="85" key="" name="Bind Data Source Item Drop Rate" />
+	<md_scom_metric id="86" key="" name="DB Log File Allocated Space Left (MB)" />
+	<md_scom_metric id="87" key="" name="DB Log File Allocated Space Left (%)" />
+	<md_scom_metric id="88" key="" name="DB Log File Free Space (MB)" />
+	<md_scom_metric id="89" key="" name="Current Bandwidth" />
+	<md_scom_metric id="90" key="" name="Large Object Heap size" />
+	<md_scom_metric id="91" key="" name="# Bytes in all Heaps" />
+	<md_scom_metric id="92" key="" name="Disk Write Bytes/sec" />
+	<md_scom_metric id="93" key="" name="DB Log File Free Space (%)" />
+	<md_scom_metric id="94" key="" name="DB File Group Free Space (%)" />
+	<md_scom_metric id="95" key="" name="DB Allocated Size (MB)" />
+	<md_scom_metric id="96" key="" name="DB Total Free Space (MB)" />
+	<md_scom_metric id="97" key="" name="DB Total Free Space (%)" />
+	<md_scom_metric id="98" key="" name="DB File Allocated Space Left (MB)" />
+	<md_scom_metric id="99" key="" name="DB File Allocated Space Left (%)" />
+	<md_scom_metric id="100" key="" name="DB File Free Space (MB)" />
+	<md_scom_metric id="101" key="" name="DB File Free Space (%)" />
+	<md_scom_metric id="102" key="" name="DB File Group Allocated Space Left (MB)" />
+	<md_scom_metric id="103" key="" name="DB File Group Allocated Space Left (%)" />
+	<md_scom_metric id="104" key="" name="DB Log File Allocated Space Left (%)" />
+	<md_scom_metric id="105" key="" name="DB Log File Free Space (%)" />
+	<md_scom_metric id="106" key="" name="DB File Free Space (%)" />
+	<md_scom_metric id="107" key="" name="DB File Group Allocated Space Left (MB)" />
+	<md_scom_metric id="108" key="" name="DB File Group Allocated Space Left (%)" />
+	<md_scom_metric id="109" key="" name="DB File Group Free Space (MB)" />
+	<md_scom_metric id="110" key="" name="DB File Group Free Space (%)" />
+	<md_scom_metric id="111" key="" name="DB Allocated Size (MB)" />
+	<md_scom_metric id="112" key="" name="DB Total Free Space (%)" />
+	<md_scom_metric id="113" key="" name="Private Bytes" />
+	<md_scom_metric id="114" key="" name="Virtual Bytes" />
+	<md_scom_metric id="115" key="" name="PercentBandwidthUsedTotal" />
+	<md_scom_metric id="116" key="" name="Executing Time/Page Request" />
+	<md_scom_metric id="117" key="" name="Buffers spooled" />
+	<md_scom_metric id="118" key="" name="Rows read" />
+	<md_scom_metric id="119" key="" name="Rows written" />
+	<md_scom_metric id="120" key="" name="Lock Timeouts/sec" />
+	<md_scom_metric id="121" key="" name="Lock Waits/sec" />
+	<md_scom_metric id="122" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="123" key="" name="DB Total Free Space (MB)" />
+	<md_scom_metric id="124" key="" name="DB Log File Free Space (MB)" />
+	<md_scom_metric id="125" key="" name="DB Log File Allocated Space Left (MB)" />
+	<md_scom_metric id="126" key="" name="Number of Deadlocks/sec" />
+	<md_scom_metric id="127" key="" name="DB File Allocated Space Left (MB)" />
+	<md_scom_metric id="128" key="" name="DB File Allocated Space Left (%)" />
+	<md_scom_metric id="129" key="" name="DB File Free Space (MB)" />
+	<md_scom_metric id="130" key="" name="Cache Hit Ratio" />
+	<md_scom_metric id="131" key="" name="Process" />
+	<md_scom_metric id="132" key="" name="Rows written/sec" />
+	<md_scom_metric id="133" key="" name="Avg time/query" />
+	<md_scom_metric id="134" key="" name="Rows sent/sec" />
+	<md_scom_metric id="135" key="" name="Memory Limit High KB" />
+	<md_scom_metric id="136" key="" name="Concurrent DM queries" />
+	<md_scom_metric id="137" key="" name="Rows read/sec" />
+	<md_scom_metric id="138" key="" name="Current models processing" />
+	<md_scom_metric id="139" key="" name="Bytes sent/sec" />
+	<md_scom_metric id="140" key="" name="Current connections" />
+	<md_scom_metric id="141" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="142" key="" name="Current connections" />
+	<md_scom_metric id="143" key="" name="Current models processing" />
+	<md_scom_metric id="144" key="" name="Concurrent DM queries" />
+	<md_scom_metric id="145" key="" name="Memory Limit High KB" />
+	<md_scom_metric id="146" key="" name="Rows read/sec" />
+	<md_scom_metric id="147" key="" name="Rows written/sec" />
+	<md_scom_metric id="148" key="" name="Avg time/query" />
+	<md_scom_metric id="149" key="" name="Bytes sent/sec" />
+	<md_scom_metric id="150" key="" name="Rows sent/sec" />
+	<md_scom_metric id="151" key="" name="Batches/sec" />
+	<md_scom_metric id="152" key="" name="Total Error Count" />
+	<md_scom_metric id="153" key="" name="Free Megabytes" />
+	<md_scom_metric id="154" key="scom.disk.free" name="% Free Space" />
+	<md_scom_metric id="155" key="" name="Current Bandwidth" />
+	<md_scom_metric id="156" key="" name="% Idle Time" />
+	<md_scom_metric id="157" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="158" key="" name="IO Read Operations/sec" />
+	<md_scom_metric id="159" key="" name="IO Write Operations/sec" />
+	<md_scom_metric id="160" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="161" key="" name="Page Reads/sec" />
+	<md_scom_metric id="162" key="" name="Page Writes/sec" />
+	<md_scom_metric id="163" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="164" key="scom.disk.transfer" name="Avg. Disk sec/Transfer" />
+	<md_scom_metric id="165" key="" name="Current Disk Queue Length" />
+	<md_scom_metric id="166" key="" name="Disk Bytes/sec" />
+	<md_scom_metric id="167" key="" name="Batch Size" />
+	<md_scom_metric id="168" key="" name="Data Items/sec" />
+	<md_scom_metric id="169" key="" name="Errors/sec" />
+	<md_scom_metric id="170" key="" name="Avg. Batch Processing Time, ms" />
+	<md_scom_metric id="171" key="" name="Avg. Batch Size" />
+	<md_scom_metric id="172" key="" name="Batch Age, sec" />
+	<md_scom_metric id="173" key="" name="Logical Disk Bytes/sec" />
+	<md_scom_metric id="174" key="" name="Disk Read Bytes/sec" />
+	<md_scom_metric id="175" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="176" key="" name="Disk Transfers/sec" />
+	<md_scom_metric id="177" key="" name="Disk Write Bytes/sec" />
+	<md_scom_metric id="178" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="179" key="" name="Free Megabytes" />
+	<md_scom_metric id="180" key="" name="% Free Inodes" />
+	<md_scom_metric id="181" key="" name="% Free Space" />
+	<md_scom_metric id="182" key="" name="% Used Inodes" />
+	<md_scom_metric id="183" key="" name="% Used Space" />
+	<md_scom_metric id="184" key="" name="Used Megabytes" />
+	<md_scom_metric id="185" key="" name="Bytes Received/Sec" />
+	<md_scom_metric id="186" key="" name="Bytes Sent/Sec" />
+	<md_scom_metric id="187" key="" name="Bytes Total/Sec" />
+	<md_scom_metric id="188" key="" name="Available MBytes Memory" />
+	<md_scom_metric id="189" key="" name="Available MBytes Swap" />
+	<md_scom_metric id="190" key="" name="Page Reads/sec" />
+	<md_scom_metric id="191" key="" name="Pages/sec" />
+	<md_scom_metric id="192" key="" name="Page Writes/sec" />
+	<md_scom_metric id="193" key="" name="% Available Memory" />
+	<md_scom_metric id="194" key="" name="% Available Swap Space" />
+	<md_scom_metric id="195" key="" name="% Used Memory" />
+	<md_scom_metric id="196" key="" name="% Used Swap Space" />
+	<md_scom_metric id="197" key="" name="% DPC Time" />
+	<md_scom_metric id="198" key="" name="% Idle Time" />
+	<md_scom_metric id="199" key="" name="% Interrupt Time" />
+	<md_scom_metric id="200" key="" name="% IO Wait Time" />
+	<md_scom_metric id="201" key="" name="% Nice Time" />
+	<md_scom_metric id="202" key="" name="% Privileged Time" />
+	<md_scom_metric id="203" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="204" key="" name="% User Time" />
+	<md_scom_metric id="205" key="" name="Used MBytes Swap Space" />
+	<md_scom_metric id="206" key="" name="Used Memory MBytes" />
+	<md_scom_metric id="207" key="" name="Average execution time" />
+	<md_scom_metric id="208" key="" name="Cache hit ratio" />
+	<md_scom_metric id="209" key="" name="Cache size" />
+	<md_scom_metric id="210" key="" name="Calls per second" />
+	<md_scom_metric id="211" key="" name="Last cache refresh time" />
+	<md_scom_metric id="212" key="" name="Maximum cache refresh time" />
+	<md_scom_metric id="213" key="" name="Maximum cache size" />
+	<md_scom_metric id="214" key="" name="Web method calls" />
+	<md_scom_metric id="215" key="" name="Web method exceptions" />
+	<md_scom_metric id="216" key="" name="Available worker threads." />
+	<md_scom_metric id="217" key="" name="Computer rollups received" />
+	<md_scom_metric id="218" key="" name="Computer rollups received (full)" />
+	<md_scom_metric id="219" key="" name="Computer rollups received (partial)" />
+	<md_scom_metric id="220" key="" name="Computer status rollups received" />
+	<md_scom_metric id="221" key="" name="Computer status rollups received (delta)" />
+	<md_scom_metric id="222" key="" name="Computer status rollups received (full)" />
+	<md_scom_metric id="223" key="" name="Computer status rollups received (minor)" />
+	<md_scom_metric id="224" key="" name="Events per Second Dispatched" />
+	<md_scom_metric id="225" key="" name="Events per Second Handled (Debug)" />
+	<md_scom_metric id="226" key="" name="Events per Second Inserted into the Database (Raw Database)" />
+	<md_scom_metric id="227" key="" name="Events per Second Processed (Raw Database)" />
+	<md_scom_metric id="228" key="" name="Events per Second Processed (Update Status)" />
+	<md_scom_metric id="229" key="" name="Events per Second Queued" />
+	<md_scom_metric id="230" key="" name="Events per Second Reported" />
+	<md_scom_metric id="231" key="" name="Invalid Batches Dropped" />
+	<md_scom_metric id="232" key="" name="Number of Events in Queue" />
+	<md_scom_metric id="233" key="" name="Outstanding handler calls" />
+	<md_scom_metric id="234" key="" name="Oversized Batches Dropped" />
+	<md_scom_metric id="235" key="" name="Queue Dequeue %" />
+	<md_scom_metric id="236" key="" name="Queue Enqueue Thread Count" />
+	<md_scom_metric id="237" key="" name="Queue Locked %" />
+	<md_scom_metric id="238" key="" name="ReportEvent Calls per Second" />
+	<md_scom_metric id="239" key="" name="Server rollups received" />
+	<md_scom_metric id="240" key="" name="Web method calls" />
+	<md_scom_metric id="241" key="" name="Web method exceptions" />
+	<md_scom_metric id="242" key="" name="Average execution time" />
+	<md_scom_metric id="243" key="" name="Bytes per second" />
+	<md_scom_metric id="244" key="" name="Calls per second" />
+	<md_scom_metric id="245" key="" name="Maximum execution time" />
+	<md_scom_metric id="246" key="" name="Average execution time" />
+	<md_scom_metric id="247" key="" name="Calls per second" />
+	<md_scom_metric id="248" key="" name="Maximum execution time" />
+	<md_scom_metric id="249" key="" name="Lock Requests/sec" />
+	<md_scom_metric id="250" key="" name="Transactions/sec" />
+	<md_scom_metric id="251" key="" name="SQL Compilations/sec" />
+	<md_scom_metric id="252" key="" name="SQL Re-Compilations/sec" />
+	<md_scom_metric id="253" key="" name="Stored Procedures Invoked/sec" />
+	<md_scom_metric id="254" key="" name="Task Limit Reached" />
+	<md_scom_metric id="255" key="" name="Task Limit Reached/sec" />
+	<md_scom_metric id="256" key="" name="Tasks Aborted/sec" />
+	<md_scom_metric id="257" key="" name="Tasks Started/sec" />
+	<md_scom_metric id="258" key="" name="Broker Transaction Rollbacks" />
+	<md_scom_metric id="259" key="" name="Enqueued Messages/sec" />
+	<md_scom_metric id="260" key="" name="Enqueued Transport Msgs/sec" />
+	<md_scom_metric id="261" key="" name="SQL RECEIVEs/sec" />
+	<md_scom_metric id="262" key="" name="SQL SENDs/sec" />
+	<md_scom_metric id="263" key="" name="Message Fragment Receives/sec" />
+	<md_scom_metric id="264" key="" name="Message Fragment Sends/sec" />
+	<md_scom_metric id="265" key="" name="Open Connection Count" />
+	<md_scom_metric id="266" key="" name="Receive I/Os/sec" />
+	<md_scom_metric id="267" key="" name="Send I/Os/sec" />
+	<md_scom_metric id="268" key="" name="ISAPI Extension Requests/sec" />
+	<md_scom_metric id="269" key="" name="Handle Count" />
+	<md_scom_metric id="270" key="" name="Queries" />
+	<md_scom_metric id="271" key="" name="Queries Succeeded" />
+	<md_scom_metric id="272" key="" name="Total Method Requests/sec" />
+	<md_scom_metric id="273" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="274" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="275" key="" name="Connection Attempts/sec" />
+	<md_scom_metric id="276" key="" name="% Privileged Time" />
+	<md_scom_metric id="277" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="278" key="" name="Avg. Disk Bytes/Read" />
+	<md_scom_metric id="279" key="" name="Avg. Disk Bytes/Write" />
+	<md_scom_metric id="280" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="281" key="" name="Cache Bytes" />
+	<md_scom_metric id="282" key="" name="% Idle Time" />
+	<md_scom_metric id="283" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="284" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="285" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="286" key="" name="Output Queue Length" />
+	<md_scom_metric id="287" key="" name="Page Faults/sec" />
+	<md_scom_metric id="288" key="" name="Packets Received/sec" />
+	<md_scom_metric id="289" key="" name="Packets Sent/sec" />
+	<md_scom_metric id="290" key="" name="Web method exceptions" />
+	<md_scom_metric id="291" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="292" key="" name="System Up Time" />
+	<md_scom_metric id="293" key="" name="Handle Count" />
+	<md_scom_metric id="294" key="" name="Open Connections" />
+	<md_scom_metric id="295" key="" name="Total online clients" />
+	<md_scom_metric id="296" key="" name="Thread Count" />
+	<md_scom_metric id="297" key="" name="Working Set Peak" />
+	<md_scom_metric id="298" key="" name="Bind Data Source Item Incoming Rate" />
+	<md_scom_metric id="299" key="" name="Bytes Received from Replica/sec" />
+	<md_scom_metric id="300" key="" name="Bytes Sent to Replica/sec" />
+	<md_scom_metric id="301" key="" name="Bytes Sent to Transport/sec" />
+	<md_scom_metric id="302" key="" name="File Bytes Received/sec" />
+	<md_scom_metric id="303" key="" name="Flow Control/sec" />
+	<md_scom_metric id="304" key="" name="Flow Control Time (ms/sec)" />
+	<md_scom_metric id="305" key="" name="Log Bytes Received/sec" />
+	<md_scom_metric id="306" key="" name="Log remaining for undo" />
+	<md_scom_metric id="307" key="" name="Log Send Queue" />
+	<md_scom_metric id="308" key="" name="Mirrored Write Transactions/sec" />
+	<md_scom_metric id="309" key="" name="Receives from Replica/sec" />
+	<md_scom_metric id="310" key="" name="Resent Messages/sec" />
+	<md_scom_metric id="311" key="" name="Recovery Queue" />
+	<md_scom_metric id="312" key="" name="Redo blocked/sec" />
+	<md_scom_metric id="313" key="" name="Redo Bytes Remaining" />
+	<md_scom_metric id="314" key="" name="Redone Bytes/sec" />
+	<md_scom_metric id="315" key="" name="Sends to Replica/sec" />
+	<md_scom_metric id="316" key="" name="Sends to Transport/sec" />
+	<md_scom_metric id="317" key="" name="Total Log requiring undo" />
+	<md_scom_metric id="318" key="" name="Transaction Delay" />
+	<md_scom_metric id="319" key="" name="Response Time (ms)" />
+	<md_scom_metric id="320" key="" name="Current Connections" />
+	<md_scom_metric id="321" key="" name="% Idle Time" />
+	<md_scom_metric id="322" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="323" key="" name="Free Megabytes" />
+	<md_scom_metric id="324" key="scom.disk.free" name="% Free Space" />
+	<md_scom_metric id="325" key="" name="Current Disk Queue Length" />
+	<md_scom_metric id="326" key="scom.disk.transfer" name="Avg. Disk sec/Transfer" />
+	<md_scom_metric id="327" key="" name="Current Disk Queue Length" />
+	<md_scom_metric id="328" key="" name="% Idle Time" />
+	<md_scom_metric id="329" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="330" key="" name="Current Disk Queue Length" />
+	<md_scom_metric id="331" key="" name="Avg. Disk sec/Transfer" />
+	<md_scom_metric id="332" key="" name="Transaction Response Time" />
+	<md_scom_metric id="333" key="" name="Disk Bytes/sec" />
+	<md_scom_metric id="334" key="scom.disk.transfer" name="Avg. Disk sec/Transfer" />
+	<md_scom_metric id="335" key="" name="Handle Count" />
+	<md_scom_metric id="336" key="" name="Private Bytes" />
+	<md_scom_metric id="337" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="338" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="339" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="340" key="" name="% Committed Bytes In Use" />
+	<md_scom_metric id="341" key="" name="Disk Bytes/sec" />
+	<md_scom_metric id="342" key="" name="Client Connections" />
+	<md_scom_metric id="343" key="" name="Percent Processor Time" />
+	<md_scom_metric id="344" key="" name="Private Bytes" />
+	<md_scom_metric id="345" key="" name="Outbound Connections Current" />
+	<md_scom_metric id="346" key="" name="Total Messages Submitted" />
+	<md_scom_metric id="347" key="" name="Messages Delivered/sec" />
+	<md_scom_metric id="348" key="" name="Messages Delivered/sec" />
+	<md_scom_metric id="349" key="" name="Outbound Connections Current" />
+	<md_scom_metric id="350" key="" name="Total Messages Submitted" />
+	<md_scom_metric id="351" key="" name="Processor Queue Length" />
+	<md_scom_metric id="352" key="" name="Free space / MB" />
+	<md_scom_metric id="353" key="" name="Free space / Percent" />
+	<md_scom_metric id="354" key="" name="Total size / MB" />
+	<md_scom_metric id="355" key="" name="Active File Uploads" />
+	<md_scom_metric id="356" key="" name="Avg. Batch Size" />
+	<md_scom_metric id="357" key="" name="Avg. Processing Time" />
+	<md_scom_metric id="358" key="" name="Pages/sec" />
+	<md_scom_metric id="359" key="" name="Split IO/Sec" />
+	<md_scom_metric id="360" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="361" key="" name="Bind Data Source Item Post Rate" />
+	<md_scom_metric id="362" key="" name="Bytes Received" />
+	<md_scom_metric id="363" key="" name="Bytes Transmitted" />
+	<md_scom_metric id="364" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="365" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="366" key="" name="Current Connections" />
+	<md_scom_metric id="367" key="" name="Avg. Batch Processing Time, ms" />
+	<md_scom_metric id="368" key="" name="Avg. Batch Size" />
+	<md_scom_metric id="369" key="" name="Batches/sec" />
+	<md_scom_metric id="370" key="" name="Data Items/sec" />
+	<md_scom_metric id="371" key="" name="Dropped Batch Count" />
+	<md_scom_metric id="372" key="" name="Dropped Data Item Count" />
+	<md_scom_metric id="373" key="" name="Errors/sec" />
+	<md_scom_metric id="374" key="" name="Total Error Count" />
+	<md_scom_metric id="375" key="" name="Memory Used By Tables (MB)" />
+	<md_scom_metric id="376" key="" name="File Group Active Pairs" />
+	<md_scom_metric id="377" key="" name="DB In-Memory OLTP File Group Available Space Total (%)" />
+	<md_scom_metric id="378" key="" name="Web method calls" />
+	<md_scom_metric id="379" key="" name="In-Memory OLTP File Group container free space (%)" />
+	<md_scom_metric id="380" key="" name="User Resource Pool Memory Consumption (MB)" />
+	<md_scom_metric id="381" key="" name="User Resource Memory Consumption (%)" />
+	<md_scom_metric id="382" key="" name="In-Memory OLTP File Group container free space (MB)" />
+	<md_scom_metric id="383" key="" name="Bytes Received from Replica/sec" />
+	<md_scom_metric id="384" key="" name="Bytes Sent to Replica/sec" />
+	<md_scom_metric id="385" key="" name="Bytes Sent to Transport/sec" />
+	<md_scom_metric id="386" key="" name="File Bytes Received/sec" />
+	<md_scom_metric id="387" key="" name="Flow Control/sec" />
+	<md_scom_metric id="388" key="" name="Flow Control Time (ms/sec)" />
+	<md_scom_metric id="389" key="" name="Log Bytes Received/sec" />
+	<md_scom_metric id="390" key="" name="Log remaining for undo" />
+	<md_scom_metric id="391" key="" name="Log Send Queue" />
+	<md_scom_metric id="392" key="" name="Mirrored Write Transactions/sec" />
+	<md_scom_metric id="393" key="" name="Receives from Replica/sec" />
+	<md_scom_metric id="394" key="" name="Resent Messages/sec" />
+	<md_scom_metric id="395" key="" name="Recovery Queue" />
+	<md_scom_metric id="396" key="" name="Redo blocked/sec" />
+	<md_scom_metric id="397" key="" name="Redo Bytes Remaining" />
+	<md_scom_metric id="398" key="" name="Redone Bytes/sec" />
+	<md_scom_metric id="399" key="" name="Sends to Replica/sec" />
+	<md_scom_metric id="400" key="" name="Sends to Transport/sec" />
+	<md_scom_metric id="401" key="" name="Total Log requiring undo" />
+	<md_scom_metric id="402" key="" name="Transaction Delay" />
+	<md_scom_metric id="403" key="" name="File Group Non Active Pairs" />
+	<md_scom_metric id="404" key="" name="XTP Memory Used (KB)" />
+	<md_scom_metric id="405" key="" name="Memory Used By Indexes (MB)" />
+	<md_scom_metric id="406" key="" name="Memory Optimized Data Garbage Collection Fill Factor (%)" />
+	<md_scom_metric id="407" key="" name="DB In-Memory OLTP File Group Available Space Total (MB)" />
+	<md_scom_metric id="408" key="" name="Buffers spooled" />
+	<md_scom_metric id="409" key="" name="Rows read" />
+	<md_scom_metric id="410" key="" name="Rows written" />
+	<md_scom_metric id="411" key="" name="NumberAgents" />
+	<md_scom_metric id="412" key="" name="Free System Page Table Entries" />
+	<md_scom_metric id="413" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="414" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="415" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="416" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="417" key="" name="Avg. Disk sec/Read" />
+	<md_scom_metric id="418" key="" name="Avg. Disk sec/Write" />
+	<md_scom_metric id="419" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="420" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="421" key="" name="% Disk Read Time" />
+	<md_scom_metric id="422" key="" name="% Disk Write Time" />
+	<md_scom_metric id="423" key="" name="% Idle Time" />
+	<md_scom_metric id="424" key="" name="Active File Downloads" />
+	<md_scom_metric id="425" key="" name="Active File Uploads" />
+	<md_scom_metric id="426" key="" name="Pages/sec" />
+	<md_scom_metric id="427" key="" name="Inbound Connections Current" />
+	<md_scom_metric id="428" key="" name="Inbound Connections Current" />
+	<md_scom_metric id="429" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="430" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="431" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="432" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="433" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="434" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="435" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="436" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="437" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="438" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="439" key="" name="Messages Received/sec" />
+	<md_scom_metric id="440" key="" name="Messages Sent/sec" />
+	<md_scom_metric id="441" key="" name="Messages Received/sec" />
+	<md_scom_metric id="442" key="" name="Messages Sent/sec" />
+	<md_scom_metric id="443" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="444" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="445" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="446" key="" name="Connection Attempts/sec" />
+	<md_scom_metric id="447" key="" name="Current Connections" />
+	<md_scom_metric id="448" key="" name="Total Method Requests/sec" />
+	<md_scom_metric id="449" key="" name="Pool Nonpaged Bytes" />
+	<md_scom_metric id="450" key="" name="Pool Paged Bytes" />
+	<md_scom_metric id="451" key="" name="Processor Queue Length" />
+	<md_scom_metric id="452" key="" name="agent processor utilization" />
+	<md_scom_metric id="453" key="" name="Rows read" />
+	<md_scom_metric id="454" key="" name="Rows written" />
+	<md_scom_metric id="455" key="" name="Buffers spooled" />
+	<md_scom_metric id="456" key="" name="Pool Nonpaged Bytes" />
+	<md_scom_metric id="457" key="" name="% Committed Bytes In Use" />
+	<md_scom_metric id="458" key="" name="PercentMemoryUsed" />
+	<md_scom_metric id="459" key="" name="Pool Paged Bytes" />
+	<md_scom_metric id="460" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="461" key="" name="AlertsCount" />
+	<md_scom_metric id="462" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="463" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="464" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="465" key="" name="Inbound Connections Current" />
+	<md_scom_metric id="466" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="467" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="468" key="" name="Messages Delivered/sec" />
+	<md_scom_metric id="469" key="" name="Messages Received/sec" />
+	<md_scom_metric id="470" key="" name="Messages Sent/sec" />
+	<md_scom_metric id="471" key="" name="Outbound Connections Current" />
+	<md_scom_metric id="472" key="" name="Total Messages Submitted" />
+	<md_scom_metric id="473" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="474" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="475" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="476" key="" name="Inbound Connections Current" />
+	<md_scom_metric id="477" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="478" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="479" key="" name="Messages Delivered/sec" />
+	<md_scom_metric id="480" key="" name="Messages Received/sec" />
+	<md_scom_metric id="481" key="" name="Messages Sent/sec" />
+	<md_scom_metric id="482" key="" name="Outbound Connections Current" />
+	<md_scom_metric id="483" key="" name="Total Messages Submitted" />
+	<md_scom_metric id="484" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="485" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="486" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="487" key="" name="Connection Attempts/sec" />
+	<md_scom_metric id="488" key="" name="Current Connections" />
+	<md_scom_metric id="489" key="" name="Total Method Requests/sec" />
+	<md_scom_metric id="490" key="" name="Free System Page Table Entries" />
+	<md_scom_metric id="491" key="" name="PercentMemoryUsed" />
+	<md_scom_metric id="492" key="" name="Content Size" />
+	<md_scom_metric id="493" key="" name="Content Time" />
+	<md_scom_metric id="494" key="" name="DNS Resolution Time" />
+	<md_scom_metric id="495" key="" name="Time To First Byte" />
+	<md_scom_metric id="496" key="" name="Time To Last Byte" />
+	<md_scom_metric id="497" key="" name="DB Avg. Disk ms/Write" />
+	<md_scom_metric id="498" key="" name="Message Fragment Sends/sec" />
+	<md_scom_metric id="499" key="" name="Sweep scans started/sec" />
+	<md_scom_metric id="500" key="" name="Outstanding HTTP Storage IO" />
+	<md_scom_metric id="501" key="" name="Send I/Os/sec" />
+	<md_scom_metric id="502" key="" name="Rows processed/sec (first in bucket and removed)" />
+	<md_scom_metric id="503" key="" name="SQL RECEIVEs/sec" />
+	<md_scom_metric id="504" key="" name="DB Transactions/sec" />
+	<md_scom_metric id="505" key="" name="SQL Compilations/sec" />
+	<md_scom_metric id="506" key="" name="Transfers/sec" />
+	<md_scom_metric id="507" key="" name="Cursor unique violations/sec" />
+	<md_scom_metric id="508" key="" name="Expired rows touched/sec" />
+	<md_scom_metric id="509" key="" name="DB Transaction Log Available Space Total (%)" />
+	<md_scom_metric id="510" key="" name="DB Available Outer Space (MB)" />
+	<md_scom_metric id="511" key="" name="Cache memory target (KB)" />
+	<md_scom_metric id="512" key="" name="Avg. microsec/Transfer" />
+	<md_scom_metric id="513" key="" name="DB Active Requests" />
+	<md_scom_metric id="514" key="" name="Max memory (KB)" />
+	<md_scom_metric id="515" key="" name="DB File Allocated Space Unused (%)" />
+	<md_scom_metric id="516" key="" name="DB Active Sessions" />
+	<md_scom_metric id="517" key="" name="DB File Allocated Space Unused (MB)" />
+	<md_scom_metric id="518" key="" name="Parallel GC work item/sec" />
+	<md_scom_metric id="519" key="" name="Used memory (KB)" />
+	<md_scom_metric id="520" key="" name="Task Limit Reached" />
+	<md_scom_metric id="521" key="" name="Cursor updates/sec" />
+	<md_scom_metric id="522" key="" name="Dusty corner scan retries/sec (GC-issued)" />
+	<md_scom_metric id="523" key="" name="Merge Policy Evaluations" />
+	<md_scom_metric id="524" key="" name="SQL Re-Compilations/sec" />
+	<md_scom_metric id="525" key="" name="Active memory grants count" />
+	<md_scom_metric id="526" key="" name="DB Allocated Space (MB)" />
+	<md_scom_metric id="527" key="" name="Save point refreshes/sec" />
+	<md_scom_metric id="528" key="" name="Main GC work items/sec" />
+	<md_scom_metric id="529" key="" name="Page life expectancy" />
+	<md_scom_metric id="530" key="" name="Active Memory grant amount (KB)" />
+	<md_scom_metric id="531" key="" name="Rows processed/sec (first in bucket)" />
+	<md_scom_metric id="532" key="" name="Tasks Started/sec" />
+	<md_scom_metric id="533" key="" name="Memory grants/sec" />
+	<md_scom_metric id="534" key="" name="CPU Utilization (%)" />
+	<md_scom_metric id="535" key="" name="Lock Requests/sec" />
+	<md_scom_metric id="536" key="" name="Cursor write conflicts/sec" />
+	<md_scom_metric id="537" key="" name="Sweep expiring rows touched/sec" />
+	<md_scom_metric id="538" key="" name="Writes/sec" />
+	<md_scom_metric id="539" key="" name="Average Wait Time (ms)" />
+	<md_scom_metric id="540" key="" name="DB File Group Allocated Space Unused (%)" />
+	<md_scom_metric id="541" key="" name="Read Bytes/Sec" />
+	<md_scom_metric id="542" key="" name="Message Fragment Receives/sec" />
+	<md_scom_metric id="543" key="" name="SQL SENDs/sec" />
+	<md_scom_metric id="544" key="" name="DB Log File Available Space Total (MB)" />
+	<md_scom_metric id="545" key="" name="Transaction validation failures/sec" />
+	<md_scom_metric id="546" key="" name="DB File Available Space Total (MB)" />
+	<md_scom_metric id="547" key="" name="Logins/sec" />
+	<md_scom_metric id="548" key="" name="User Connections" />
+	<md_scom_metric id="549" key="" name="Log bytes written/sec" />
+	<md_scom_metric id="550" key="" name="Pending memory grants count" />
+	<md_scom_metric id="551" key="" name="Total Bytes/sec" />
+	<md_scom_metric id="552" key="" name="Transactions/sec" />
+	<md_scom_metric id="553" key="" name="Commit dependencies taken/sec" />
+	<md_scom_metric id="554" key="" name="Avg. Bytes/Write" />
+	<md_scom_metric id="555" key="" name="Cursor scans started/sec" />
+	<md_scom_metric id="556" key="" name="Rows processed/sec" />
+	<md_scom_metric id="557" key="" name="Write Bytes/Sec" />
+	<md_scom_metric id="558" key="" name="DB Active Connections" />
+	<md_scom_metric id="559" key="" name="DB File Group Available Space Total (%)" />
+	<md_scom_metric id="560" key="" name="DB File Available Space Total (%)" />
+	<md_scom_metric id="561" key="" name="Buffers spooled" />
+	<md_scom_metric id="562" key="" name="Rows read" />
+	<md_scom_metric id="563" key="" name="Rows written" />
+	<md_scom_metric id="564" key="" name="Enqueued Messages/sec" />
+	<md_scom_metric id="565" key="" name="Sweep expired rows touched/sec" />
+	<md_scom_metric id="566" key="" name="Cursor inserts/sec" />
+	<md_scom_metric id="567" key="" name="Lock Timeouts/sec" />
+	<md_scom_metric id="568" key="" name="Cursor deletes/sec" />
+	<md_scom_metric id="569" key="" name="Transactions aborted by user/sec" />
+	<md_scom_metric id="570" key="" name="Checkpoints Closed" />
+	<md_scom_metric id="571" key="" name="Tentatively-deleted rows touched/sec" />
+	<md_scom_metric id="572" key="" name="Stolen Server Memory (MB)" />
+	<md_scom_metric id="573" key="" name="Open Connection Count" />
+	<md_scom_metric id="574" key="" name="Enqueued Transport Msgs/sec" />
+	<md_scom_metric id="575" key="" name="DB File Group Allocated Space Unused (MB)" />
+	<md_scom_metric id="576" key="" name="Avg. Bytes/Read" />
+	<md_scom_metric id="577" key="" name="Lock Waits/sec" />
+	<md_scom_metric id="578" key="" name="Thread count" />
+	<md_scom_metric id="579" key="" name="Save points created/sec" />
+	<md_scom_metric id="580" key="" name="Avg. microsec/Read" />
+	<md_scom_metric id="581" key="" name="Tasks Aborted/sec" />
+	<md_scom_metric id="582" key="" name="DB Log File Allocated Space Unused (%)" />
+	<md_scom_metric id="583" key="" name="DB Log File Available Space Total (%)" />
+	<md_scom_metric id="584" key="" name="DB Active Transactions" />
+	<md_scom_metric id="585" key="" name="Merge Requests Outstanding" />
+	<md_scom_metric id="586" key="" name="Memory grant timeouts/sec" />
+	<md_scom_metric id="587" key="" name="Merges Installed" />
+	<md_scom_metric id="588" key="" name="DB Allocated Space Used (MB)" />
+	<md_scom_metric id="589" key="" name="Read-only transactions prepared/sec" />
+	<md_scom_metric id="590" key="" name="Total Files Merged" />
+	<md_scom_metric id="591" key="" name="Dusty corner scan retries/sec (user-issued)" />
+	<md_scom_metric id="592" key="" name="Transactions created/sec" />
+	<md_scom_metric id="593" key="" name="HTTP Storage IO Retry/sec" />
+	<md_scom_metric id="594" key="" name="Stored Procedures Invoked/sec" />
+	<md_scom_metric id="595" key="" name="Compile Memory Target (KB)" />
+	<md_scom_metric id="596" key="" name="Merges Abandoned" />
+	<md_scom_metric id="597" key="" name="Rows processed/sec (no sweep needed)" />
+	<md_scom_metric id="598" key="" name="Avg. microsec/Write" />
+	<md_scom_metric id="599" key="" name="Expired rows removed/sec" />
+	<md_scom_metric id="600" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="601" key="" name="Transactions aborted/sec" />
+	<md_scom_metric id="602" key="" name="Rows processed/sec (marked for unlink)" />
+	<md_scom_metric id="603" key="" name="DB Allocated Space Unused (MB)" />
+	<md_scom_metric id="604" key="" name="DB Available Space Total (MB)" />
+	<md_scom_metric id="605" key="" name="Reads/sec" />
+	<md_scom_metric id="606" key="" name="Rows returned/sec" />
+	<md_scom_metric id="607" key="" name="Task Limit Reached/sec" />
+	<md_scom_metric id="608" key="" name="Transfers/sec" />
+	<md_scom_metric id="609" key="" name="Free System Page Table Entries" />
+	<md_scom_metric id="610" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="611" key="" name="Pages/sec" />
+	<md_scom_metric id="612" key="" name="% Committed Bytes In Use" />
+	<md_scom_metric id="613" key="" name="Pool Nonpaged Bytes" />
+	<md_scom_metric id="614" key="" name="Pool Paged Bytes" />
+	<md_scom_metric id="615" key="" name="Processor Queue Length" />
+	<md_scom_metric id="616" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="617" key="" name="Cascading aborts/sec" />
+	<md_scom_metric id="618" key="" name="Sweep expired rows removed/sec" />
+	<md_scom_metric id="619" key="" name="Number of Deadlocks/sec" />
+	<md_scom_metric id="620" key="" name="Broker Transaction Rollbacks" />
+	<md_scom_metric id="621" key="" name="DB File Group Available Space Total (MB)" />
+	<md_scom_metric id="622" key="" name="Core Merges Completed" />
+	<md_scom_metric id="623" key="" name="Query exec memory target (KB)" />
+	<md_scom_metric id="624" key="" name="Target memory (KB)" />
+	<md_scom_metric id="625" key="" name="Checkpoints Completed" />
+	<md_scom_metric id="626" key="" name="Receive I/Os/sec" />
+	<md_scom_metric id="627" key="" name="DB Log File Allocated Space Unused (MB)" />
+	<md_scom_metric id="628" key="" name="Save point rollbacks/sec" />
+	<md_scom_metric id="629" key="" name="Rows touched/sec" />
+	<md_scom_metric id="630" key="" name="Sweep rows touched/sec" />
+	<md_scom_metric id="631" key="" name="DB Avg. Disk ms/Read" />
+	<md_scom_metric id="632" key="" name="DB Available Space Total (%)" />
+	<md_scom_metric id="633" key="" name="Log records written/sec" />
+	<md_scom_metric id="634" key="" name="Average time taken for Project Open" />
+	<md_scom_metric id="635" key="" name="Percentage of incremental save to full save" />
+	<md_scom_metric id="636" key="" name="Private Bytes" />
+	<md_scom_metric id="637" key="" name="Working Set" />
+	<md_scom_metric id="638" key="" name="% Jobs Failed / Hour" />
+	<md_scom_metric id="639" key="" name="Virtual Bytes" />
+	<md_scom_metric id="640" key="" name="Private Bytes" />
+	<md_scom_metric id="641" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="642" key="" name="% Committed Bytes In Use" />
+	<md_scom_metric id="643" key="" name="Worker Process Restarts" />
+	<md_scom_metric id="644" key="" name="In Memory Templates Cached" />
+	<md_scom_metric id="645" key="" name="Templates Cached" />
+	<md_scom_metric id="646" key="" name="% Usage" />
+	<md_scom_metric id="647" key="" name="Cache Total Entries" />
+	<md_scom_metric id="648" key="" name="Cache Total Hit Ratio" />
+	<md_scom_metric id="649" key="" name="Connection Attempts/sec" />
+	<md_scom_metric id="650" key="scom.disk.free" name="% Free Space" />
+	<md_scom_metric id="651" key="" name="Worker Process Restarts" />
+	<md_scom_metric id="652" key="" name="Current ISAPI Extension Requests" />
+	<md_scom_metric id="653" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="654" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="655" key="" name="User Connections" />
+	<md_scom_metric id="656" key="" name="Processor Queue Length" />
+	<md_scom_metric id="657" key="" name="% User Time" />
+	<md_scom_metric id="658" key="" name="Interrupts/sec" />
+	<md_scom_metric id="659" key="" name="Current Connections" />
+	<md_scom_metric id="660" key="" name="Pages/sec" />
+	<md_scom_metric id="661" key="" name="% Time in GC" />
+	<md_scom_metric id="662" key="" name="Finalization Survivors" />
+	<md_scom_metric id="663" key="" name="Context Switches/sec" />
+	<md_scom_metric id="664" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="665" key="" name="Cache Faults/sec" />
+	<md_scom_metric id="666" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="667" key="" name="Disk Read Bytes/sec" />
+	<md_scom_metric id="668" key="" name="Requests/Sec" />
+	<md_scom_metric id="669" key="" name="% Disk Time" />
+	<md_scom_metric id="670" key="" name="% Sql Retries / Day" />
+	<md_scom_metric id="671" key="" name="Average Wait Time / Minute" />
+	<md_scom_metric id="672" key="" name="% Jobs Failed / Day" />
+	<md_scom_metric id="673" key="" name="Documents processed" />
+	<md_scom_metric id="674" key="" name="Documents received" />
+	<md_scom_metric id="675" key="" name="Orchestrations rehydrated/sec" />
+	<md_scom_metric id="676" key="" name="Documents received/Sec" />
+	<md_scom_metric id="677" key="" name="Orchestrations dehydrated/sec" />
+	<md_scom_metric id="678" key="" name="Documents processed/Sec" />
+	<md_scom_metric id="679" key="" name="Documents suspended/Sec" />
+	<md_scom_metric id="680" key="" name="Orchestrations discarded/sec" />
+	<md_scom_metric id="681" key="" name="Orchestrations completed/sec" />
+	<md_scom_metric id="682" key="" name="Bytes sent/Sec" />
+	<md_scom_metric id="683" key="" name="Database transactions/sec" />
+	<md_scom_metric id="684" key="" name="Messages received/Sec" />
+	<md_scom_metric id="685" key="" name="Orchestrations suspended/sec" />
+	<md_scom_metric id="686" key="" name="Orchestrations dehydrated" />
+	<md_scom_metric id="687" key="" name="Orchestrations rehydrated" />
+	<md_scom_metric id="688" key="" name="Orchestrations discarded" />
+	<md_scom_metric id="689" key="" name="Database transactions" />
+	<md_scom_metric id="690" key="" name="Idle orchestrations" />
+	<md_scom_metric id="691" key="" name="Orchestrations suspended" />
+	<md_scom_metric id="692" key="" name="Megabytes allocated virtual memory" />
+	<md_scom_metric id="693" key="" name="Runnable orchestrations" />
+	<md_scom_metric id="694" key="" name="Running orchestrations" />
+	<md_scom_metric id="695" key="" name="Messages received" />
+	<md_scom_metric id="696" key="" name="Orchestrations completed" />
+	<md_scom_metric id="697" key="" name="Pending messages" />
+	<md_scom_metric id="698" key="" name="MessageBox databases connection failures" />
+	<md_scom_metric id="699" key="" name="Pending work items" />
+	<md_scom_metric id="700" key="" name="Request/Response timeouts" />
+	<md_scom_metric id="701" key="" name="Documents suspended" />
+	<md_scom_metric id="702" key="" name="Orchestrations created" />
+	<md_scom_metric id="703" key="" name="Dehydratable orchestrations" />
+	<md_scom_metric id="704" key="" name="Dehydrating orchestrations" />
+	<md_scom_metric id="705" key="" name="Megabytes allocated private memory" />
+	<md_scom_metric id="706" key="" name="Instances - Total Number" />
+	<md_scom_metric id="707" key="" name="Tracking Data Size" />
+	<md_scom_metric id="708" key="" name="Host Queue - Length" />
+	<md_scom_metric id="709" key="" name="% Idle Time" />
+	<md_scom_metric id="710" key="" name="ID Process" />
+	<md_scom_metric id="711" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="712" key="" name="Spool Size" />
+	<md_scom_metric id="713" key="" name="% used physical memory" />
+	<md_scom_metric id="714" key="" name="Active receive locations" />
+	<md_scom_metric id="715" key="" name="Bytes received" />
+	<md_scom_metric id="716" key="" name="Messages received" />
+	<md_scom_metric id="717" key="" name="Orchestrations resident in-memory" />
+	<md_scom_metric id="718" key="" name="Messages sent" />
+	<md_scom_metric id="719" key="" name="Messages received" />
+	<md_scom_metric id="720" key="" name="Messages received" />
+	<md_scom_metric id="721" key="" name="Messages received" />
+	<md_scom_metric id="722" key="" name="Messages sent" />
+	<md_scom_metric id="723" key="" name="Messages sent" />
+	<md_scom_metric id="724" key="" name="Messages sent" />
+	<md_scom_metric id="725" key="" name="Bytes sent" />
+	<md_scom_metric id="726" key="" name="Bytes received" />
+	<md_scom_metric id="727" key="" name="Bytes sent" />
+	<md_scom_metric id="728" key="" name="Messages received" />
+	<md_scom_metric id="729" key="" name="Messages received" />
+	<md_scom_metric id="730" key="" name="Bytes received" />
+	<md_scom_metric id="731" key="" name="Messages sent" />
+	<md_scom_metric id="732" key="" name="Bytes sent" />
+	<md_scom_metric id="733" key="" name="Active sessions" />
+	<md_scom_metric id="734" key="" name="Messages received" />
+	<md_scom_metric id="735" key="" name="Messages sent" />
+	<md_scom_metric id="736" key="" name="Messages sent" />
+	<md_scom_metric id="737" key="" name="Bytes received" />
+	<md_scom_metric id="738" key="" name="Messages sent" />
+	<md_scom_metric id="739" key="" name="Host Queue - Suspended Msgs - Length" />
+	<md_scom_metric id="740" key="" name="Host Queue - Instance State Msg Refs - Length" />
+	<md_scom_metric id="741" key="" name="Host Queue - Number of Instances" />
+	<md_scom_metric id="742" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="743" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="744" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="745" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="746" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="747" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="748" key="" name="MsgBox Dead Processes Cleanup (Purge Jobs)" />
+	<md_scom_metric id="749" key="" name="Messages received/Sec" />
+	<md_scom_metric id="750" key="" name="Bytes received/Sec" />
+	<md_scom_metric id="751" key="" name="Messages received/Sec" />
+	<md_scom_metric id="752" key="" name="Inbound Latency (sec)" />
+	<md_scom_metric id="753" key="" name="Tracking Spool Cleanup (Purge Jobs)" />
+	<md_scom_metric id="754" key="" name="Messages received/Sec" />
+	<md_scom_metric id="755" key="" name="Messages received/Sec" />
+	<md_scom_metric id="756" key="" name="Messages received/Sec" />
+	<md_scom_metric id="757" key="" name="Request-Response Latency (sec)" />
+	<md_scom_metric id="758" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="759" key="" name="Bytes received/Sec" />
+	<md_scom_metric id="760" key="" name="Orchestrations created/sec" />
+	<md_scom_metric id="761" key="" name="Messages received/Sec" />
+	<md_scom_metric id="762" key="" name="Bytes received/Sec" />
+	<md_scom_metric id="763" key="" name="Bytes sent/Sec" />
+	<md_scom_metric id="764" key="" name="Messages sent/Sec" />
+	<md_scom_metric id="765" key="" name="Bytes sent/Sec" />
+	<md_scom_metric id="766" key="" name="Messages received/Sec" />
+	<md_scom_metric id="767" key="" name="Outbound Adapter Latency (sec)" />
+	<md_scom_metric id="768" key="" name="Bytes received/Sec" />
+	<md_scom_metric id="769" key="" name="Tracked Msgs Copy (Purge Jobs)" />
+	<md_scom_metric id="770" key="" name="MsgBox Parts Cleanup (Purge Jobs)" />
+	<md_scom_metric id="771" key="" name="MsgBox Msg Cleanup (Purge Jobs)" />
+	<md_scom_metric id="772" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="773" key="" name="Total Failed Events" />
+	<md_scom_metric id="774" key="" name="Total Records" />
+	<md_scom_metric id="775" key="" name="Total Events" />
+	<md_scom_metric id="776" key="" name="Duration of Probing (sec)" />
+	<md_scom_metric id="777" key="" name="Duration of Processing (sec)" />
+	<md_scom_metric id="778" key="" name="Duration Total (sec)" />
+	<md_scom_metric id="779" key="" name="Blob Cache fill ratio" />
+	<md_scom_metric id="780" key="" name="Total number of cache compactions" />
+	<md_scom_metric id="781" key="" name="Executing Time/Page Request" />
+	<md_scom_metric id="782" key="" name="Blob cache flushes / second" />
+	<md_scom_metric id="783" key="" name="Artifact resolution Requests" />
+	<md_scom_metric id="784" key="" name="Artifact resolution Requests/sec" />
+	<md_scom_metric id="785" key="" name="Federation Metadata Requests" />
+	<md_scom_metric id="786" key="" name="Federation Metadata Requests/sec" />
+	<md_scom_metric id="787" key="" name="Token Requests" />
+	<md_scom_metric id="788" key="" name="Token Requests/sec" />
+	<md_scom_metric id="789" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="790" key="" name="% Committed Bytes In Use" />
+	<md_scom_metric id="791" key="" name="Pages/sec" />
+	<md_scom_metric id="792" key="" name="PercentMemoryUsed" />
+	<md_scom_metric id="793" key="" name="Free System Page Table Entries" />
+	<md_scom_metric id="794" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="795" key="" name="Pool Paged Bytes" />
+	<md_scom_metric id="796" key="" name="Errors Total/Sec" />
+	<md_scom_metric id="797" key="" name="Requests Not Found" />
+	<md_scom_metric id="798" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="799" key="" name="Pool Nonpaged Bytes" />
+	<md_scom_metric id="800" key="" name="Current Connections" />
+	<md_scom_metric id="801" key="" name="Processor Queue Length" />
+	<md_scom_metric id="802" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="803" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="804" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="805" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="806" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="807" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="808" key="" name="Inbound Connections Current" />
+	<md_scom_metric id="809" key="" name="Message Bytes Received/sec" />
+	<md_scom_metric id="810" key="" name="Message Bytes Sent/sec" />
+	<md_scom_metric id="811" key="" name="Messages Delivered/sec" />
+	<md_scom_metric id="812" key="" name="Messages Received/sec" />
+	<md_scom_metric id="813" key="" name="Messages Sent/sec" />
+	<md_scom_metric id="814" key="" name="Outbound Connections Current" />
+	<md_scom_metric id="815" key="" name="Total Messages Submitted" />
+	<md_scom_metric id="816" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="817" key="" name="Current Connections" />
+	<md_scom_metric id="818" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="819" key="" name="Current Connections" />
+	<md_scom_metric id="820" key="" name="Total Count" />
+	<md_scom_metric id="821" key="" name="Available Capacity Percent" />
+	<md_scom_metric id="822" key="" name="Consumed Capacity" />
+	<md_scom_metric id="823" key="" name="Subscribed Capacity Percent" />
+	<md_scom_metric id="824" key="" name="Consumed Capacity Percent" />
+	<md_scom_metric id="825" key="" name="Subscribed Capacity" />
+	<md_scom_metric id="826" key="" name="Total Count" />
+	<md_scom_metric id="827" key="" name="Available Capacity" />
+	<md_scom_metric id="828" key="" name="Ifs Available Bytes" />
+	<md_scom_metric id="829" key="" name="Ifs Free Bytes" />
+	<md_scom_metric id="830" key="" name="Cluster Ifs InBitsPerSecond" />
+	<md_scom_metric id="831" key="" name="Cluster Ifs In Bytes" />
+	<md_scom_metric id="832" key="" name="Cluster Ifs OutBitsPerSecond" />
+	<md_scom_metric id="833" key="" name="Cluster Ifs Out Bytes" />
+	<md_scom_metric id="834" key="" name="Ifs Total Bytes" />
+	<md_scom_metric id="835" key="" name="Ifs Used Bytes" />
+	<md_scom_metric id="836" key="" name="Cluster Network In Bits/Second" />
+	<md_scom_metric id="837" key="" name="Cluster Network In Bytes" />
+	<md_scom_metric id="838" key="" name="Cluster Network Out Bits/Second" />
+	<md_scom_metric id="839" key="" name="Cluster Network Out Bytes" />
+	<md_scom_metric id="840" key="" name="Cluster CPU Idle" />
+	<md_scom_metric id="841" key="" name="Cluster CPU Interrupt" />
+	<md_scom_metric id="842" key="" name="Cluster CPU Nice" />
+	<md_scom_metric id="843" key="" name="Cluster CPU System" />
+	<md_scom_metric id="844" key="" name="Cluster CPU User" />
+	<md_scom_metric id="845" key="" name="InBits/Second" />
+	<md_scom_metric id="846" key="" name="Ops/Second" />
+	<md_scom_metric id="847" key="" name="OutBits/Second" />
+	<md_scom_metric id="848" key="" name="Node Ifs InBitsPerSecond" />
+	<md_scom_metric id="849" key="" name="Node Ifs In Bytes" />
+	<md_scom_metric id="850" key="" name="Node Ifs OutBitsPerSecond" />
+	<md_scom_metric id="851" key="" name="Node Ifs Out Bytes" />
+	<md_scom_metric id="852" key="" name="Latency Average" />
+	<md_scom_metric id="853" key="" name="Latency Max" />
+	<md_scom_metric id="854" key="" name="Latency Min" />
+	<md_scom_metric id="855" key="" name="Latency Std Dev" />
+	<md_scom_metric id="856" key="" name="Network Node In Bits/Second" />
+	<md_scom_metric id="857" key="" name="Node Network In Bytes" />
+	<md_scom_metric id="858" key="" name="Network Node Out Bits/Second" />
+	<md_scom_metric id="859" key="" name="Node Network Out Bytes" />
+	<md_scom_metric id="860" key="" name="Out Bits/Second" />
+	<md_scom_metric id="861" key="" name="Out Avg Bytes" />
+	<md_scom_metric id="862" key="" name="Out Max Bytes" />
+	<md_scom_metric id="863" key="" name="Out Std Dev Bytes" />
+	<md_scom_metric id="864" key="" name="CPU Idle" />
+	<md_scom_metric id="865" key="" name="CPU Interrupt" />
+	<md_scom_metric id="866" key="" name="CPU Nice" />
+	<md_scom_metric id="867" key="" name="CPU System" />
+	<md_scom_metric id="868" key="" name="CPU User" />
+	<md_scom_metric id="869" key="" name="Current models processing" />
+	<md_scom_metric id="870" key="" name="Concurrent DM queries" />
+	<md_scom_metric id="871" key="" name="Memory Limit High KB" />
+	<md_scom_metric id="872" key="" name="Rows read/sec" />
+	<md_scom_metric id="873" key="" name="Rows written/sec" />
+	<md_scom_metric id="874" key="" name="Avg time/query" />
+	<md_scom_metric id="875" key="" name="Bytes sent/sec" />
+	<md_scom_metric id="876" key="" name="Rows sent/sec" />
+	<md_scom_metric id="877" key="" name="Current connections" />
+	<md_scom_metric id="878" key="" name="Active Sessions" />
+	<md_scom_metric id="879" key="" name="Inactive Sessions" />
+	<md_scom_metric id="880" key="" name="Total Sessions" />
+	<md_scom_metric id="881" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="882" key="" name="Working Set" />
+	<md_scom_metric id="883" key="" name="Private Bytes" />
+	<md_scom_metric id="884" key="" name="Total Web Application Response Time" />
+	<md_scom_metric id="885" key="" name="Total Web Application Response Time" />
+	<md_scom_metric id="886" key="" name="Database Queue % Full" />
+	<md_scom_metric id="887" key="" name="DB Loader Event Inserts/sec" />
+	<md_scom_metric id="888" key="" name="DB String Cache Hit %" />
+	<md_scom_metric id="889" key="" name="Database Queue Backoff Threshold in %" />
+	<md_scom_metric id="890" key="" name="Database Queue Disconnect Threshold in %" />
+	<md_scom_metric id="891" key="" name="Connected Clients" />
+	<md_scom_metric id="892" key="" name="Incoming Events/sec" />
+	<md_scom_metric id="893" key="" name="Logical Disk Bytes/sec" />
+	<md_scom_metric id="894" key="" name="Disk Read Bytes/sec" />
+	<md_scom_metric id="895" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="896" key="" name="Disk Transfers/sec" />
+	<md_scom_metric id="897" key="" name="Disk Write Bytes/sec" />
+	<md_scom_metric id="898" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="899" key="" name="Free Megabytes" />
+	<md_scom_metric id="900" key="" name="% Free Inodes" />
+	<md_scom_metric id="901" key="" name="% Free Space" />
+	<md_scom_metric id="902" key="" name="% Used Inodes" />
+	<md_scom_metric id="903" key="" name="% Used Space" />
+	<md_scom_metric id="904" key="" name="% Free Space" />
+	<md_scom_metric id="905" key="" name="Bytes Received/Sec" />
+	<md_scom_metric id="906" key="" name="Bytes Sent/Sec" />
+	<md_scom_metric id="907" key="" name="Bytes Total/Sec" />
+	<md_scom_metric id="908" key="" name="Available MBytes Memory" />
+	<md_scom_metric id="909" key="" name="Available MBytes Swap" />
+	<md_scom_metric id="910" key="" name="Page Reads/sec" />
+	<md_scom_metric id="911" key="" name="Pages/sec" />
+	<md_scom_metric id="912" key="" name="Page Writes/sec" />
+	<md_scom_metric id="913" key="" name="% Available Memory" />
+	<md_scom_metric id="914" key="" name="% Available Swap Space" />
+	<md_scom_metric id="915" key="" name="% Used Memory" />
+	<md_scom_metric id="916" key="" name="% Used Swap Space" />
+	<md_scom_metric id="917" key="" name="% DPC Time" />
+	<md_scom_metric id="918" key="" name="% Idle Time" />
+	<md_scom_metric id="919" key="" name="% Interrupt Time" />
+	<md_scom_metric id="920" key="" name="% IO Wait Time" />
+	<md_scom_metric id="921" key="" name="% Nice Time" />
+	<md_scom_metric id="922" key="" name="% Privileged Time" />
+	<md_scom_metric id="923" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="924" key="" name="% User Time" />
+	<md_scom_metric id="925" key="" name="Used MBytes Swap Space" />
+	<md_scom_metric id="926" key="" name="Used Memory MBytes" />
+	<md_scom_metric id="927" key="" name="Volume Used Inodes (%)" />
+	<md_scom_metric id="928" key="" name="Network data sent (KB/sec)" />
+	<md_scom_metric id="929" key="" name="Controller average total latency (ms)" />
+	<md_scom_metric id="930" key="" name="Write (operations/sec)" />
+	<md_scom_metric id="931" key="" name="CIFS (operations/sec)" />
+	<md_scom_metric id="932" key="" name="Network data received (KB/sec)" />
+	<md_scom_metric id="933" key="" name="Disk data written (KB/sec)" />
+	<md_scom_metric id="934" key="" name="Disk data read (KB/sec)" />
+	<md_scom_metric id="935" key="" name="Controller average write latency (ms)" />
+	<md_scom_metric id="936" key="" name="System CPU resource utilization (%)" />
+	<md_scom_metric id="937" key="" name="NFS (operations/sec)" />
+	<md_scom_metric id="938" key="" name="iSCSI (operations/sec)" />
+	<md_scom_metric id="939" key="" name="Average processor utilization (%)" />
+	<md_scom_metric id="940" key="" name="Read (operations/sec)" />
+	<md_scom_metric id="941" key="" name="Total (operations/sec)" />
+	<md_scom_metric id="942" key="" name="HTTP (operations/sec)" />
+	<md_scom_metric id="943" key="" name="Total processor utilization (%)" />
+	<md_scom_metric id="944" key="" name="Controller average read latency (ms)" />
+	<md_scom_metric id="945" key="" name="FCP (operations/sec)" />
+	<md_scom_metric id="946" key="" name="LUN average latency (ms)" />
+	<md_scom_metric id="947" key="" name="Volume Used Space (%)" />
+	<md_scom_metric id="948" key="" name="Number of MainMode SAs with user kerberos" />
+	<md_scom_metric id="949" key="" name="Number of sticky connections" />
+	<md_scom_metric id="950" key="" name="Disk Bytes/sec" />
+	<md_scom_metric id="951" key="" name="Disk Read Bytes/sec" />
+	<md_scom_metric id="952" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="953" key="" name="Disk Transfers/sec" />
+	<md_scom_metric id="954" key="" name="Disk Write Bytes/sec" />
+	<md_scom_metric id="955" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="956" key="" name="Free Megabytes" />
+	<md_scom_metric id="957" key="" name="% Free Space" />
+	<md_scom_metric id="958" key="" name="% Used Space" />
+	<md_scom_metric id="959" key="" name="Used Megabytes" />
+	<md_scom_metric id="960" key="" name="Bytes Received/Sec" />
+	<md_scom_metric id="961" key="" name="Bytes Sent/Sec" />
+	<md_scom_metric id="962" key="" name="Bytes Total/Sec" />
+	<md_scom_metric id="963" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="964" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="965" key="" name="Page Reads/sec" />
+	<md_scom_metric id="966" key="" name="Pages/sec" />
+	<md_scom_metric id="967" key="" name="Page Writes/sec" />
+	<md_scom_metric id="968" key="" name="% Available Memory" />
+	<md_scom_metric id="969" key="" name="% Available Swap Space" />
+	<md_scom_metric id="970" key="" name="% Used Memory" />
+	<md_scom_metric id="971" key="" name="% Used Swap Space" />
+	<md_scom_metric id="972" key="" name="% DPC Time" />
+	<md_scom_metric id="973" key="" name="% Idle Time" />
+	<md_scom_metric id="974" key="" name="% Interrupt Time" />
+	<md_scom_metric id="975" key="" name="% IO Wait Time" />
+	<md_scom_metric id="976" key="" name="% Nice Time" />
+	<md_scom_metric id="977" key="" name="% Privileged Time" />
+	<md_scom_metric id="978" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="979" key="" name="% User Time" />
+	<md_scom_metric id="980" key="" name="Used MBytes" />
+	<md_scom_metric id="981" key="" name="Used Memory MBytes" />
+	<md_scom_metric id="982" key="" name="Group Average Latency (ms)" />
+	<md_scom_metric id="983" key="" name="Group Committed Space (%)" />
+	<md_scom_metric id="984" key="" name="Storage Efficiency (%)" />
+	<md_scom_metric id="985" key="" name="Controller Committed Space (%)" />
+	<md_scom_metric id="986" key="" name="Aggregate Committed Space (%)" />
+	<md_scom_metric id="987" key="" name="Volume average latency (ms)" />
+	<md_scom_metric id="988" key="" name="Storage Efficiency (%)" />
+	<md_scom_metric id="989" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="990" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="991" key="" name="Private Bytes" />
+	<md_scom_metric id="992" key="" name="Private Bytes" />
+	<md_scom_metric id="993" key="" name="Private Bytes" />
+	<md_scom_metric id="994" key="" name="Private Bytes" />
+	<md_scom_metric id="995" key="" name="Private Bytes" />
+	<md_scom_metric id="996" key="" name="Maximum documents per sec" />
+	<md_scom_metric id="997" key="" name="Minimum documents per sec" />
+	<md_scom_metric id="998" key="" name="API partial update operations" />
+	<md_scom_metric id="999" key="" name="SCtl total allocated" />
+	<md_scom_metric id="1000" key="" name="Maximum batch size" />
+	<md_scom_metric id="1001" key="" name="API queue size" />
+	<md_scom_metric id="1002" key="" name="Documents indexed" />
+	<md_scom_metric id="1003" key="" name="API operations per sec" />
+	<md_scom_metric id="1004" key="" name="API remove operations" />
+	<md_scom_metric id="1005" key="" name="Documents in indexer" />
+	<md_scom_metric id="1006" key="" name="Registered file receivers" />
+	<md_scom_metric id="1007" key="" name="API operations" />
+	<md_scom_metric id="1008" key="" name="Collections removed" />
+	<md_scom_metric id="1009" key="" name="Size of documents" />
+	<md_scom_metric id="1010" key="" name="API queue load" />
+	<md_scom_metric id="1011" key="" name="Fixml fill rate" />
+	<md_scom_metric id="1012" key="" name="API status update operations" />
+	<md_scom_metric id="1013" key="" name="SCtl currently allocated" />
+	<md_scom_metric id="1014" key="" name="Registered search controllers" />
+	<md_scom_metric id="1015" key="" name="Last batch size" />
+	<md_scom_metric id="1016" key="" name="Failed operations" />
+	<md_scom_metric id="1017" key="" name="Active nodes" />
+	<md_scom_metric id="1018" key="" name="Total searches" />
+	<md_scom_metric id="1019" key="" name="Average time per search - ms" />
+	<md_scom_metric id="1020" key="" name="Average uncached search time - ms" />
+	<md_scom_metric id="1021" key="" name="Timeout percentage" />
+	<md_scom_metric id="1022" key="" name="Active partitions" />
+	<md_scom_metric id="1023" key="" name="QRServer Test Query Content Size" />
+	<md_scom_metric id="1024" key="" name="QRServer Test Query Response Time" />
+	<md_scom_metric id="1025" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1026" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1027" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1028" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1029" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1030" key="" name="Pages/sec" />
+	<md_scom_metric id="1031" key="" name="# of Queries/sec" />
+	<md_scom_metric id="1032" key="" name="# of Requests/sec" />
+	<md_scom_metric id="1033" key="" name="Average searches per minute" />
+	<md_scom_metric id="1034" key="" name="Avg. Disk sec/Transfer" />
+	<md_scom_metric id="1035" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1036" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="1037" key="" name="Average search latency - ms" />
+	<md_scom_metric id="1038" key="" name="Private Bytes" />
+	<md_scom_metric id="1039" key="" name="Private Bytes" />
+	<md_scom_metric id="1040" key="" name="Private Bytes" />
+	<md_scom_metric id="1041" key="" name="Private Bytes" />
+	<md_scom_metric id="1042" key="" name="Private Bytes" />
+	<md_scom_metric id="1043" key="" name="Peak queries per sec" />
+	<md_scom_metric id="1044" key="" name="# of Fail total queries/sec" />
+	<md_scom_metric id="1045" key="" name="Average document sum latency - ms" />
+	<md_scom_metric id="1046" key="" name="# of Fail system queries/sec" />
+	<md_scom_metric id="1047" key="" name="# of Fail user queries/sec" />
+	<md_scom_metric id="1048" key="" name="Average latency - ms" />
+	<md_scom_metric id="1049" key="" name="Private Bytes" />
+	<md_scom_metric id="1050" key="" name="Private Bytes" />
+	<md_scom_metric id="1051" key="" name="Private Bytes" />
+	<md_scom_metric id="1052" key="" name="Private Bytes" />
+	<md_scom_metric id="1053" key="" name="Average latency last - ms" />
+	<md_scom_metric id="1054" key="" name="Batches Processed" />
+	<md_scom_metric id="1055" key="" name="Processing load" />
+	<md_scom_metric id="1056" key="" name="Operations received" />
+	<md_scom_metric id="1057" key="" name="Average dispatch time - ms" />
+	<md_scom_metric id="1058" key="" name="Document processors busy" />
+	<md_scom_metric id="1059" key="" name="Operation sets submitted" />
+	<md_scom_metric id="1060" key="" name="Clients creating sessions" />
+	<md_scom_metric id="1061" key="" name="Operations/sec" />
+	<md_scom_metric id="1062" key="" name="Average processing time - ms" />
+	<md_scom_metric id="1063" key="" name="Operations last period" />
+	<md_scom_metric id="1064" key="" name="Document processors invalid" />
+	<md_scom_metric id="1065" key="" name="Document processors" />
+	<md_scom_metric id="1066" key="" name="Document processors unused" />
+	<md_scom_metric id="1067" key="" name="Contributing Links" />
+	<md_scom_metric id="1068" key="" name="Sites Served" />
+	<md_scom_metric id="1069" key="" name="URIs Served" />
+	<md_scom_metric id="1070" key="" name="Resource usage" />
+	<md_scom_metric id="1071" key="" name="Wait queue length" />
+	<md_scom_metric id="1072" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1073" key="" name="Pending exclusion list" />
+	<md_scom_metric id="1074" key="" name="Status code" />
+	<md_scom_metric id="1075" key="" name="Instantiate count" />
+	<md_scom_metric id="1076" key="" name="Active count" />
+	<md_scom_metric id="1077" key="" name="Total documents" />
+	<md_scom_metric id="1078" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1079" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1080" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1081" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1082" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1083" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1084" key="" name="Active documents" />
+	<md_scom_metric id="1085" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1086" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1087" key="" name="Indexed per second" />
+	<md_scom_metric id="1088" key="" name="Total resource count" />
+	<md_scom_metric id="1089" key="" name="Server submitting to indexing dispatcher" />
+	<md_scom_metric id="1090" key="" name="Resolving master contentdistributor" />
+	<md_scom_metric id="1091" key="" name="Resolving dispatcher contentdistributor" />
+	<md_scom_metric id="1092" key="" name="Total number of initializations" />
+	<md_scom_metric id="1093" key="" name="Server processing" />
+	<md_scom_metric id="1094" key="" name="Total number of completed reassigns" />
+	<md_scom_metric id="1095" key="" name="Queue Full State" />
+	<md_scom_metric id="1096" key="" name="Server initializing" />
+	<md_scom_metric id="1097" key="" name="Total number started reassigns" />
+	<md_scom_metric id="1098" key="" name="Batches Submitted" />
+	<md_scom_metric id="1099" key="" name="Avg Wait Time" />
+	<md_scom_metric id="1100" key="" name="Avg End-To-End Time" />
+	<md_scom_metric id="1101" key="" name="Items Success" />
+	<md_scom_metric id="1102" key="" name="Items Open" />
+	<md_scom_metric id="1103" key="" name="Batches Ready" />
+	<md_scom_metric id="1104" key="" name="Avg Submit Time" />
+	<md_scom_metric id="1105" key="" name="Avg Callback Time" />
+	<md_scom_metric id="1106" key="" name="Avg Init Time" />
+	<md_scom_metric id="1107" key="" name="Batches Failed" />
+	<md_scom_metric id="1108" key="" name="Batches Total" />
+	<md_scom_metric id="1109" key="" name="Items Total" />
+	<md_scom_metric id="1110" key="" name="Batches Success" />
+	<md_scom_metric id="1111" key="" name="Batches Open" />
+	<md_scom_metric id="1112" key="" name="DATABASE" />
+	<md_scom_metric id="1113" key="" name="GENERAL" />
+	<md_scom_metric id="1114" key="" name="NETWORKING" />
+	<md_scom_metric id="1115" key="" name="METRIC" />
+	<md_scom_metric id="1116" key="" name="Total Web Application Response Time" />
+	<md_scom_metric id="1117" key="" name="Total Web Application Response Time" />
+	<md_scom_metric id="1118" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1119" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1120" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1121" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1122" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1123" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1124" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1125" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1126" key="" name="PercentBandwidthUsedTotal" />
+	<md_scom_metric id="1127" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="1128" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="1129" key="" name="Current Connections" />
+	<md_scom_metric id="1130" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="1131" key="" name="Megabytes allocated private memory" />
+	<md_scom_metric id="1132" key="" name="ID Process" />
+	<md_scom_metric id="1133" key="" name="Tracking Data Size" />
+	<md_scom_metric id="1134" key="" name="MsgBox Msg Cleanup (Purge Jobs)" />
+	<md_scom_metric id="1135" key="" name="Spool Size" />
+	<md_scom_metric id="1136" key="" name="Tracking Spool Cleanup (Purge Jobs)" />
+	<md_scom_metric id="1137" key="" name="Instances - Total Number" />
+	<md_scom_metric id="1138" key="" name="Request-Response Latency (sec)" />
+	<md_scom_metric id="1139" key="" name="Outbound Adapter Latency (sec)" />
+	<md_scom_metric id="1140" key="" name="Total Records" />
+	<md_scom_metric id="1141" key="" name="Inbound Latency (sec)" />
+	<md_scom_metric id="1142" key="" name="Total Events" />
+	<md_scom_metric id="1143" key="" name="Total Failed Events" />
+	<md_scom_metric id="1144" key="" name="Orchestrations created/sec" />
+	<md_scom_metric id="1145" key="" name="Orchestrations resident in-memory" />
+	<md_scom_metric id="1146" key="" name="Active receive locations" />
+	<md_scom_metric id="1147" key="" name="Documents received" />
+	<md_scom_metric id="1148" key="" name="Pending messages" />
+	<md_scom_metric id="1149" key="" name="Database transactions/sec" />
+	<md_scom_metric id="1150" key="" name="Dehydrating orchestrations" />
+	<md_scom_metric id="1151" key="" name="Idle orchestrations" />
+	<md_scom_metric id="1152" key="" name="Orchestrations rehydrated/sec" />
+	<md_scom_metric id="1153" key="" name="Orchestrations completed/sec" />
+	<md_scom_metric id="1154" key="" name="Orchestrations suspended/sec" />
+	<md_scom_metric id="1155" key="" name="Documents suspended" />
+	<md_scom_metric id="1156" key="" name="Orchestrations discarded/sec" />
+	<md_scom_metric id="1157" key="" name="Pending work items" />
+	<md_scom_metric id="1158" key="" name="Documents suspended/Sec" />
+	<md_scom_metric id="1159" key="" name="Documents received/Sec" />
+	<md_scom_metric id="1160" key="" name="Database transactions" />
+	<md_scom_metric id="1161" key="" name="Runnable orchestrations" />
+	<md_scom_metric id="1162" key="" name="Orchestrations completed" />
+	<md_scom_metric id="1163" key="" name="Orchestrations dehydrated/sec" />
+	<md_scom_metric id="1164" key="" name="Orchestrations rehydrated" />
+	<md_scom_metric id="1165" key="" name="Orchestrations created" />
+	<md_scom_metric id="1166" key="" name="Running orchestrations" />
+	<md_scom_metric id="1167" key="" name="Orchestrations suspended" />
+	<md_scom_metric id="1168" key="" name="Documents processed/Sec" />
+	<md_scom_metric id="1169" key="" name="Orchestrations dehydrated" />
+	<md_scom_metric id="1170" key="" name="Orchestrations discarded" />
+	<md_scom_metric id="1171" key="" name="Documents processed" />
+	<md_scom_metric id="1172" key="" name="Request/Response timeouts" />
+	<md_scom_metric id="1173" key="" name="MessageBox databases connection failures" />
+	<md_scom_metric id="1174" key="" name="Dehydratable orchestrations" />
+	<md_scom_metric id="1175" key="" name="% used physical memory" />
+	<md_scom_metric id="1176" key="" name="Megabytes allocated virtual memory" />
+	<md_scom_metric id="1177" key="" name="Host Queue - Length" />
+	<md_scom_metric id="1178" key="" name="Host Queue - Instance State Msg Refs - Length" />
+	<md_scom_metric id="1179" key="" name="Host Queue - Number of Instances" />
+	<md_scom_metric id="1180" key="" name="Host Queue - Suspended Msgs - Length" />
+	<md_scom_metric id="1181" key="" name="MsgBox Parts Cleanup (Purge Jobs)" />
+	<md_scom_metric id="1182" key="" name="Tracked Msgs Copy (Purge Jobs)" />
+	<md_scom_metric id="1183" key="" name="MsgBox Dead Processes Cleanup (Purge Jobs)" />
+	<md_scom_metric id="1184" key="" name="% Idle Time" />
+	<md_scom_metric id="1185" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1186" key="" name="Virtual Bytes" />
+	<md_scom_metric id="1187" key="" name="Client Connections Using Cache" />
+	<md_scom_metric id="1188" key="" name="Private Bytes" />
+	<md_scom_metric id="1189" key="" name="Client Connections" />
+	<md_scom_metric id="1190" key="" name="Number Of Queued Requests" />
+	<md_scom_metric id="1191" key="" name="Number Of Active Requests" />
+	<md_scom_metric id="1192" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1193" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="1194" key="" name="Current Connections" />
+	<md_scom_metric id="1195" key="" name="Requests Not Found" />
+	<md_scom_metric id="1196" key="" name="Requests/Sec" />
+	<md_scom_metric id="1197" key="" name="Request Wait Time" />
+	<md_scom_metric id="1198" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="1199" key="" name="Current Connections" />
+	<md_scom_metric id="1200" key="" name="Page Writes/sec" />
+	<md_scom_metric id="1201" key="" name="% Usage" />
+	<md_scom_metric id="1202" key="" name="Context Switches/sec" />
+	<md_scom_metric id="1203" key="" name="Page Reads/sec" />
+	<md_scom_metric id="1204" key="" name="Avg. Disk sec/Write" />
+	<md_scom_metric id="1205" key="" name="Avg. Disk sec/Read" />
+	<md_scom_metric id="1206" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="1207" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="1208" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="1209" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="1210" key="" name="agent processor utilization" />
+	<md_scom_metric id="1211" key="" name="% Usage" />
+	<md_scom_metric id="1212" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="1213" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="1214" key="" name="Avg. Disk sec/Write" />
+	<md_scom_metric id="1215" key="" name="Avg. Disk sec/Read" />
+	<md_scom_metric id="1216" key="" name="Total Web Application Response Time" />
+	<md_scom_metric id="1217" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1218" key="" name="Data Points in Memory" />
+	<md_scom_metric id="1219" key="" name="Executing Trees" />
+	<md_scom_metric id="1220" key="" name="Handle Count" />
+	<md_scom_metric id="1221" key="" name="Private Bytes" />
+	<md_scom_metric id="1222" key="" name="Waiting Trees" />
+	<md_scom_metric id="1223" key="" name="Process" />
+	<md_scom_metric id="1224" key="" name="Client Connections Using Cache" />
+	<md_scom_metric id="1225" key="" name="Virtual Bytes" />
+	<md_scom_metric id="1226" key="" name="Virtual Bytes" />
+	<md_scom_metric id="1227" key="" name="Private Bytes" />
+	<md_scom_metric id="1228" key="" name="Private Bytes" />
+	<md_scom_metric id="1229" key="" name="Open Connections" />
+	<md_scom_metric id="1230" key="" name="Virtual Bytes" />
+	<md_scom_metric id="1231" key="" name="Private Bytes" />
+	<md_scom_metric id="1232" key="" name="Buffer cache hit ratio" />
+	<md_scom_metric id="1233" key="" name="Page Reads/sec" />
+	<md_scom_metric id="1234" key="" name="Page Writes/sec" />
+	<md_scom_metric id="1235" key="" name="Cache Hit Ratio" />
+	<md_scom_metric id="1236" key="" name="IO Read Operations/sec" />
+	<md_scom_metric id="1237" key="" name="IO Write Operations/sec" />
+	<md_scom_metric id="1238" key="" name="Handle Count" />
+	<md_scom_metric id="1239" key="" name="Split IO/Sec" />
+	<md_scom_metric id="1240" key="scom.mem.free" name="Available MBytes" />
+	<md_scom_metric id="1241" key="" name="Bind Data Source Item Post Rate" />
+	<md_scom_metric id="1242" key="" name="Number Of Active Requests" />
+	<md_scom_metric id="1243" key="" name="Bytes Received" />
+	<md_scom_metric id="1244" key="" name="Bytes Transmitted" />
+	<md_scom_metric id="1245" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1246" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1247" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1248" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1249" key="" name="Avg. Disk Queue Length" />
+	<md_scom_metric id="1250" key="" name="Avg. Disk sec/Read" />
+	<md_scom_metric id="1251" key="" name="Avg. Disk sec/Write" />
+	<md_scom_metric id="1252" key="" name="Disk Reads/sec" />
+	<md_scom_metric id="1253" key="" name="Disk Writes/sec" />
+	<md_scom_metric id="1254" key="" name="% Disk Read Time" />
+	<md_scom_metric id="1255" key="" name="% Disk Write Time" />
+	<md_scom_metric id="1256" key="" name="% Idle Time" />
+	<md_scom_metric id="1257" key="" name="Active File Downloads" />
+	<md_scom_metric id="1258" key="" name="Active File Uploads" />
+	<md_scom_metric id="1259" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1260" key="" name="San Client Other SCSI Commands" />
+	<md_scom_metric id="1261" key="" name="San Client KB Written 64 Bit" />
+	<md_scom_metric id="1262" key="" name="San Client SCSI Write Commands" />
+	<md_scom_metric id="1263" key="" name="San Client KB Read 64 Bit" />
+	<md_scom_metric id="1264" key="" name="San Client SCSI Read Commands" />
+	<md_scom_metric id="1265" key="" name="MEDIA - 000 - Global health" />
+	<md_scom_metric id="1266" key="" name="MEDIA - 003 - Number of packets dropped by Secure RTP/sec" />
+	<md_scom_metric id="1267" key="" name="#NAME?" />
+	<md_scom_metric id="1268" key="" name="#NAME?" />
+	<md_scom_metric id="1269" key="" name="#NAME?" />
+	<md_scom_metric id="1270" key="" name="#NAME?" />
+	<md_scom_metric id="1271" key="" name="#NAME?" />
+	<md_scom_metric id="1272" key="" name="#NAME?" />
+	<md_scom_metric id="1273" key="" name="#NAME?" />
+	<md_scom_metric id="1274" key="" name="#NAME?" />
+	<md_scom_metric id="1275" key="" name="#NAME?" />
+	<md_scom_metric id="1276" key="" name="#NAME?" />
+	<md_scom_metric id="1277" key="" name="#NAME?" />
+	<md_scom_metric id="1278" key="" name="#NAME?" />
+	<md_scom_metric id="1279" key="" name="#NAME?" />
+	<md_scom_metric id="1280" key="" name="#NAME?" />
+	<md_scom_metric id="1281" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1282" key="" name="Private Bytes" />
+	<md_scom_metric id="1283" key="" name="MEDIA - 001 - TCP disconnects because remote out of sync" />
+	<md_scom_metric id="1284" key="" name="MEDIA - 002 - Relay allocation failures" />
+	<md_scom_metric id="1285" key="" name="Total bytes in all queues" />
+	<md_scom_metric id="1286" key="" name="Quota Pctg" />
+	<md_scom_metric id="1287" key="" name="KBytes In Journal Queue" />
+	<md_scom_metric id="1288" key="" name="Total messages in all queues" />
+	<md_scom_metric id="1289" key="" name="Sessions" />
+	<md_scom_metric id="1290" key="" name="KBytes In Queue" />
+	<md_scom_metric id="1291" key="" name="Messages In Journal Queue" />
+	<md_scom_metric id="1292" key="" name="Journal Quota Pctg" />
+	<md_scom_metric id="1293" key="" name="Messages In Queue" />
+	<md_scom_metric id="1294" key="" name="KBytes in Dead Letter Queue" />
+	<md_scom_metric id="1295" key="" name="Messages in Dead Letter Queue" />
+	<md_scom_metric id="1296" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1297" key="" name="QMS - 002 - Total number of message transactions that failed" />
+	<md_scom_metric id="1298" key="" name="CDR Service - 002 - Messages that failed validation" />
+	<md_scom_metric id="1299" key="" name="CDR Service - 006 - Dropped messages from MQ" />
+	<md_scom_metric id="1300" key="" name="CDR Service - 002 - Messages failed to be written to DB" />
+	<md_scom_metric id="1301" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1302" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1303" key="" name="Private Bytes" />
+	<md_scom_metric id="1304" key="" name="Private Bytes" />
+	<md_scom_metric id="1305" key="" name="USrv - 000 - Queue Depth" />
+	<md_scom_metric id="1306" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1307" key="" name="USrv - 002 - Queue Latency (msec)" />
+	<md_scom_metric id="1308" key="" name="CAS - 000 - Total number of mute/unmute announcements" />
+	<md_scom_metric id="1309" key="" name="% Time in GC" />
+	<md_scom_metric id="1310" key="" name="SIP - 013 - Incoming Messages Not Authenticated/sec" />
+	<md_scom_metric id="1311" key="" name="SIP - 015 - Incoming Messages Not Authorized/sec" />
+	<md_scom_metric id="1312" key="" name="SIP - 027 - Authentication System Errors/sec" />
+	<md_scom_metric id="1313" key="" name="SIP - 000 - Average Holding Time For Incoming Messages" />
+	<md_scom_metric id="1314" key="" name="SIP - 003 - Incoming Messages Held Above Low Watermark" />
+	<md_scom_metric id="1315" key="" name="SIP - 004 - Incoming Messages Held Above High Watermark" />
+	<md_scom_metric id="1316" key="" name="SIP - 006 - Incoming Messages Timed out" />
+	<md_scom_metric id="1317" key="" name="SIP - 009 - Address space usage" />
+	<md_scom_metric id="1318" key="" name="MEDIA - 001 - TCP disconnects because remote out of sync" />
+	<md_scom_metric id="1319" key="" name="USrv - 014 - Total Dropped Requests" />
+	<md_scom_metric id="1320" key="" name="USrv - 001 - Active Registered Endpoints" />
+	<md_scom_metric id="1321" key="" name="USrv - 000 - Outstanding Outbound RPC Calls" />
+	<md_scom_metric id="1322" key="" name="USrv - 013 - Average Outgoing Queue Delay (ms)" />
+	<md_scom_metric id="1323" key="" name="USrv - 004 - Outstanding C3P transactions" />
+	<md_scom_metric id="1324" key="" name="USrv - 023 - Transactions Timed-Out / sec" />
+	<md_scom_metric id="1325" key="" name="USrv - 004 - Notifications in processing" />
+	<md_scom_metric id="1326" key="" name="USrv - 011 - Factory Call Latency (msec)" />
+	<md_scom_metric id="1327" key="" name="USrv - 019 - Create Conference Latency (msec)" />
+	<md_scom_metric id="1328" key="" name="USrv - 021 - Allocation Latency (msec)" />
+	<md_scom_metric id="1329" key="" name="USrv - 000 - Conference Count" />
+	<md_scom_metric id="1330" key="" name="USrv - 001 - Active Conference Count" />
+	<md_scom_metric id="1331" key="" name="USrv - 002 - Active Participant Count" />
+	<md_scom_metric id="1332" key="" name="USrv - 003 - Active Focus Endpoint Count" />
+	<md_scom_metric id="1333" key="" name="USrv - 004 - Active Mcu Session Count" />
+	<md_scom_metric id="1334" key="" name="QMSAgent - 004 - Number of rejected metrics reports" />
+	<md_scom_metric id="1335" key="" name="QMSAgent - 014 - Total number of metrics reports rejected by the external report consumer" />
+	<md_scom_metric id="1336" key="" name="QMSAgent - 015 - Total number of failures occurred while sending reports to the external report consumer" />
+	<md_scom_metric id="1337" key="" name="QMSAgent - 016 - Total number of reports that could not be sent to the external report consumer" />
+	<md_scom_metric id="1338" key="" name="RGS - 001 - Current number of calls" />
+	<md_scom_metric id="1339" key="" name="RoutingApps - 006 - Failed Exchange UM calls" />
+	<md_scom_metric id="1340" key="" name="RoutingApps - 022 - Received 5XX from VOIP gateway" />
+	<md_scom_metric id="1341" key="" name="RoutingApps - 025 - Calls failed due to gateway unavailability" />
+	<md_scom_metric id="1342" key="" name="SIP - 006 - Connections Refused Due To Server Overload" />
+	<md_scom_metric id="1343" key="" name="SIP - 007 - Connections Refused Due To Server Overload/Sec" />
+	<md_scom_metric id="1344" key="" name="SIP - 000 - Connections Active" />
+	<md_scom_metric id="1345" key="" name="SIP - 001 - TLS Connections Active" />
+	<md_scom_metric id="1346" key="" name="SIP - 017 - Sends Outstanding" />
+	<md_scom_metric id="1347" key="" name="SIP - 018 - Sends Timed-Out" />
+	<md_scom_metric id="1348" key="" name="SIP - 023 - Flow-controlled Connections" />
+	<md_scom_metric id="1349" key="" name="SIP - 024 - Flow-controlled Connections Dropped" />
+	<md_scom_metric id="1350" key="" name="SIP - 001 - Incoming Messages/sec" />
+	<md_scom_metric id="1351" key="" name="SIP - 003 - Incoming Requests/sec" />
+	<md_scom_metric id="1352" key="" name="SIP - 011 - Messages/sec Dropped Due To Certificate Mismatch" />
+	<md_scom_metric id="1353" key="" name="SIP - 012 - Messages In Server" />
+	<md_scom_metric id="1354" key="" name="SIP - 021 - Average Incoming Message Processing Time" />
+	<md_scom_metric id="1355" key="" name="SIP - 026 - Incoming 504 Responses" />
+	<md_scom_metric id="1356" key="" name="SIP - 052 - Local 500 Responses" />
+	<md_scom_metric id="1357" key="" name="SIP - 054 - Local 503 Responses" />
+	<md_scom_metric id="1358" key="" name="SIP - 055 - Local 503 Responses/sec" />
+	<md_scom_metric id="1359" key="" name="SIP - 057 - Local 504 Responses/sec" />
+	<md_scom_metric id="1360" key="" name="SIP - 002 - Security Association (SAs) Stored" />
+	<md_scom_metric id="1361" key="" name="AVMCU - 000 - Number of Conferences" />
+	<md_scom_metric id="1362" key="" name="AVMCU - 001 - Number of Users" />
+	<md_scom_metric id="1363" key="" name="AVMCU - 002 - Number of Trusted Users" />
+	<md_scom_metric id="1364" key="" name="AVMCU - 005 - MCU Health State" />
+	<md_scom_metric id="1365" key="" name="CAA - 000 - Incomplete calls per sec" />
+	<md_scom_metric id="1366" key="" name="CAA - 000 - Total incomplete calls" />
+	<md_scom_metric id="1367" key="" name="CAA - 001 - Total Calls Received" />
+	<md_scom_metric id="1368" key="" name="CAA - 002 - Current calls" />
+	<md_scom_metric id="1369" key="" name="CAA - 003 - Total calls successfully transferred to the conference" />
+	<md_scom_metric id="1370" key="" name="CAA - 004 - Total calls failed to transfer to the conference" />
+	<md_scom_metric id="1371" key="" name="CAA - 005 - Current calls on Music-On-Hold" />
+	<md_scom_metric id="1372" key="" name="CAA - 006 - Total calls on Music-On-Hold" />
+	<md_scom_metric id="1373" key="" name="CAA - 007 - Total users timedout on Music-On-Hold" />
+	<md_scom_metric id="1374" key="" name="CAA - 008 - Total calls from PSTN callers" />
+	<md_scom_metric id="1375" key="" name="CAA - 009 - Total calls from UC client" />
+	<md_scom_metric id="1376" key="" name="CAS - 001 - Total number of entry/exit announcements" />
+	<md_scom_metric id="1377" key="" name="# Bytes in all heaps" />
+	<md_scom_metric id="1378" key="" name="# GC Handles" />
+	<md_scom_metric id="1379" key="" name="DATAMCU - 026 - Compliance errors" />
+	<md_scom_metric id="1380" key="" name="DATAMCU - 031 - Resources over conference space limit" />
+	<md_scom_metric id="1381" key="" name="DATAMCU - 038 - Number of Unhandled Application Exception" />
+	<md_scom_metric id="1382" key="" name="DATAMCU - 041 - Session queues state" />
+	<md_scom_metric id="1383" key="" name="DATAMCU - 005 - MCU Health State" />
+	<md_scom_metric id="1384" key="" name="DLX - 015 - Invalid input requests" />
+	<md_scom_metric id="1385" key="" name="DLX - 016 - Invalid input requests/sec" />
+	<md_scom_metric id="1386" key="" name="DLX - 018 - Timed out Requests that fetch Security Descriptors/sec" />
+	<md_scom_metric id="1387" key="" name="DLX - 024 - Soap exceptions/sec" />
+	<md_scom_metric id="1388" key="" name="IMMCU - 020 - Throttled Sip Connections" />
+	<md_scom_metric id="1389" key="" name="IMMCU - 005 - MCU Health State" />
+	<md_scom_metric id="1390" key="" name="ACPMCU - 007 - Throttled Sip Connections" />
+	<md_scom_metric id="1391" key="" name="ACPMCU - 005 - MCU Health State" />
+	<md_scom_metric id="1392" key="" name="API - 026 - Transactions Pending Dispatch Completion" />
+	<md_scom_metric id="1393" key="" name="Private Bytes" />
+	<md_scom_metric id="1394" key="" name="Working Set" />
+	<md_scom_metric id="1395" key="" name="Private Bytes" />
+	<md_scom_metric id="1396" key="" name="Private Bytes" />
+	<md_scom_metric id="1397" key="" name="Private Bytes" />
+	<md_scom_metric id="1398" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1399" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1400" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1401" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1402" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1403" key="" name="Private Bytes" />
+	<md_scom_metric id="1404" key="" name="Private Bytes" />
+	<md_scom_metric id="1405" key="" name="Private Bytes" />
+	<md_scom_metric id="1406" key="" name="Private Bytes" />
+	<md_scom_metric id="1407" key="" name="Private Bytes" />
+	<md_scom_metric id="1408" key="" name="Private Bytes" />
+	<md_scom_metric id="1409" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1410" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1411" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1412" key="scom.proc.time" name="% Processor Time" />
+	<md_scom_metric id="1413" key="" name="MEDIA - 003 - Number of packets dropped by Secure RTP/sec" />
+	<md_scom_metric id="1414" key="" name="MEDIA - 002 - Relay allocation failures" />
+	<md_scom_metric id="1415" key="" name="MEDIA - 000 - Global health" />
+	<md_scom_metric id="1416" key="" name="MCX - 005 - Sessions failed to sign in" />
+	<md_scom_metric id="1417" key="" name="MCX - 004 - Sessions Active" />
+	<md_scom_metric id="1418" key="" name="CWA - 060 - Total AS sharing/viewing failed to start" />
+	<md_scom_metric id="1419" key="" name="CWA - 014 - Logons denied due to server throttling" />
+	<md_scom_metric id="1420" key="" name="CWA - 001 - Requests rejected due to invalid ticket / sec" />
+	<md_scom_metric id="1421" key="" name="CWA - 007 - IWA auth logon failures" />
+	<md_scom_metric id="1422" key="" name="CWA - 009 - Outstanding authorization attempts" />
+	<md_scom_metric id="1423" key="" name="CWA - 012 - LDAP error total" />
+	<md_scom_metric id="1424" key="" name="CWA - 000 - Outstanding searches" />
+	<md_scom_metric id="1425" key="" name="CWA - 003 - LDAP errors" />
+	<md_scom_metric id="1426" key="" name="CWA - 005 - Total searches denied because the configured limit was exceeded." />
+	<md_scom_metric id="1427" key="" name="CWA - 051 - Total OCS failure reported to event logs" />
+	<md_scom_metric id="1428" key="" name="MCX - 006 - Sessions failed to sign in / sec" />
+	<md_scom_metric id="1429" key="" name="CWA - 006 - Sessions signing in" />
+	<md_scom_metric id="1430" key="" name="CWA - 003 - Forms auth logon failures" />
+	<md_scom_metric id="1431" key="" name="CWA - 002 - Sessions" />
+	<md_scom_metric id="1432" key="" name="CWA - 004 - Sessions failed to sign in" />
+	<md_scom_metric id="1433" key="" name="CWA - 016 - Average latency for successful authorization" />
+	<md_scom_metric id="1434" key="" name="CWA - 007 - Total sessions timed out" />
+	<md_scom_metric id="1435" key="" name="CWA - 015 - Requests in processing" />
+	<md_scom_metric id="1436" key="" name="CWA - 016 - Requests to nonexistent sessions" />
+	<md_scom_metric id="1437" key="" name="CWA - 018 - Total requests failed" />
+	<md_scom_metric id="1438" key="" name="MCX - 011 - Total sessions timed out" />
+	<md_scom_metric id="1439" key="" name="MCX - 018 - Total instant messages failed to deliver" />
+	<md_scom_metric id="1440" key="" name="MCX - 002 - Sessions" />
+	<md_scom_metric id="1441" key="" name="Publishing cache hits / sec" />
+	<md_scom_metric id="1442" key="" name="Requests/Sec" />
+	<md_scom_metric id="1443" key="" name="Request Wait Time" />
+	<md_scom_metric id="1444" key="" name="Page Reads/sec" />
+	<md_scom_metric id="1445" key="" name="Page Writes/sec" />
+	<md_scom_metric id="1446" key="" name="Requests/Sec" />
+	<md_scom_metric id="1447" key="" name="Requests Current" />
+	<md_scom_metric id="1448" key="" name="Request Wait Time" />
+	<md_scom_metric id="1449" key="" name="Bytes Received/sec" />
+	<md_scom_metric id="1450" key="" name="Bytes Sent/sec" />
+	<md_scom_metric id="1451" key="" name="Bytes Total/sec" />
+	<md_scom_metric id="1452" key="" name="Context Switches/sec" />
+	<md_scom_metric id="1453" key="" name="Logins/sec" />
+	<md_scom_metric id="1454" key="" name="Logins/sec" />
+	<md_scom_metric id="1455" key="" name="agent processor utilization" />
+  
+</dataset>

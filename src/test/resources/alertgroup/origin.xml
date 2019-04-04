@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+    <cf_data_source  name="Scom" id="1"/>
+    <cf_data_type  id="1" name="Scom_metric" target_entity="TestEntity" target_table="test_table" data_source_id="1" />
+    <cf_alert_group id="1" name="alertgroup1" data_type_id="1" />
+    <cf_alert_group id="2" name="alertgroup2" data_type_id="1" />
+    <cf_alert_group id="3" name="alertgroup3" data_type_id="1" />
+    <md_alert id="1" name="alert1" severity="red" data_type_id="1" />
+    <md_alert id="2" name="alert2" severity="red" data_type_id="1" />
+    <md_alert id="3" name="alert3" severity="red" data_type_id="1" />
+    <cf_group_alert_mapping  group_id="1" alert_id="1" />
+    <cf_group_alert_mapping  group_id="1" alert_id="2" />
+    <cf_group_alert_mapping  group_id="1" alert_id="3" />
+    <cf_group_alert_mapping  group_id="2" alert_id="1" />
+    <cf_group_alert_mapping  group_id="2" alert_id="2" />
+    <cf_group_alert_mapping  group_id="3" alert_id="1" />
+</dataset>

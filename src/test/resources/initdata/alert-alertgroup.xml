@@ -1,0 +1,671 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<!-- DataSource 定义 -->
+    <cf_data_source  name="SCOM" id="1"/>
+    <cf_data_source  name="APPDYN" id="2"/>
+    <cf_data_source  name="WSP" id="3"/>
+    <!-- DataType 定义 -->
+    <cf_data_type id="1" name="SCOM_ALERT" target_entity="TestEntity" target_table="test_table" data_source_id="1" />
+    <cf_data_type id="2" name="SCOM_METRIC" target_entity="TestEntity" target_table="test_table" data_source_id="1" />
+    <cf_data_type id="3" name="APPDYN_ALERT" target_entity="TestEntity" target_table="test_table" data_source_id="2" />
+    <cf_data_type id="4" name="WSP_STATISTIC" target_entity="TestEntity" target_table="test_table" data_source_id="3" />
+    
+
+	<!-- 所有Alert定义，照搬SOH数据库中的SCOM和APPDYN的Alert -->
+	<!-- SCOM Alerts -->
+	<md_alert id="1"  name="[Warning] A member was removed from a security-enabled local group." severity="AMBER" data_type_id="1" />
+	<md_alert id="2"  name="Agent update that is required for IIS 7 monitoring is not installed" severity="AMBER" data_type_id="1" />
+	<md_alert id="3"  name="API Remoting Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="4"  name="APM DataSource is not able to communicate with the APM service" severity="AMBER" data_type_id="1" />
+	<md_alert id="5"  name="Cannot open backup device." severity="AMBER" data_type_id="1" />
+	<md_alert id="6"  name="CIO.App.4230.ISeGRC.RSAServices.RSAArcherJobEngine" severity="AMBER" data_type_id="1" />
+	<md_alert id="7"  name="Cluster network failed." severity="RED" data_type_id="1" />
+	<md_alert id="8"  name="Cluster node network connectivity problem detected" severity="RED" data_type_id="1" />
+	<md_alert id="9"  name="CommonDemand NSB Subscriber Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="10"  name="ConfigMgr 2007 Crash Dumps: SMS Executive crash" severity="AMBER" data_type_id="1" />
+	<md_alert id="11"  name="ConfigMgr 2007 Perf Threshold: Site Server Scheduler Jobs Backlog > 10,000 over 3 hours" severity="AMBER" data_type_id="1" />
+	<md_alert id="12"  name="ConfigMgr 2007 Site Database Server Health: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="13"  name="Controller connection monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="14"  name="Data Warehouse data set enumeration process failed to obtain list of data sets" severity="AMBER" data_type_id="1" />
+	<md_alert id="15"  name="Data Warehouse managed object type synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="16"  name="EM Test Alert - Critical SQL" severity="AMBER" data_type_id="1" />
+	<md_alert id="17"  name="Event handler failed to load" severity="AMBER" data_type_id="1" />
+	<md_alert id="18"  name="Failed to Connect to Computer" severity="RED" data_type_id="1" />
+	<md_alert id="19"  name="Failed to open primary database file" severity="AMBER" data_type_id="1" />
+	<md_alert id="20"  name="File group is running out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="21"  name="Health Service Heartbeat Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="22"  name="Host memory usage (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="23"  name="HP Insight Server Agents failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="24"  name="IIS 7 FTP Site is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="25"  name="Inbound Queue Backlog" severity="AMBER" data_type_id="1" />
+	<md_alert id="26"  name="Management Point HINV Outbox backlog alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="27"  name="ManagemyRecords  - TRIMIDOLContent1 Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="28"  name="Many Corrupt or Unreadable Windows Events" severity="AMBER" data_type_id="1" />
+	<md_alert id="29"  name="Memory Pages Per Second is too High." severity="AMBER" data_type_id="1" />
+	<md_alert id="30"  name="Microsoft.SQLServer.2012.AlwaysOn.AvailabilityGroupOnline" severity="RED" data_type_id="1" />
+	<md_alert id="31"  name="Microsoft.SQLServer.2014.AlwaysOn.AvailabilityReplicaIsConnected" severity="RED" data_type_id="1" />
+	<md_alert id="32"  name="MSSQL 2014: Log Backup Failed to Complete" severity="AMBER" data_type_id="1" />
+	<md_alert id="33"  name="MSSQL 2014: Log files are running out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="34"  name="MSSQL 2014: SQL Server Integration Services Windows Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="35"  name="Network Devices are in pending management" severity="AMBER" data_type_id="1" />
+	<md_alert id="36"  name="One or more cluster disk volumes may be corrupt" severity="AMBER" data_type_id="1" />
+	<md_alert id="37"  name="PA.Processors.Teams Service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="38"  name="Replication: agent failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="39"  name="Self Update" severity="AMBER" data_type_id="1" />
+	<md_alert id="40"  name="SharePoint: Ping To Web Application Failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="41"  name="SQL Connection State" severity="AMBER" data_type_id="1" />
+	<md_alert id="42"  name="SQL Server Analysis Services Windows Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="43"  name="SQL Server Port on Firewall Not Open" severity="AMBER" data_type_id="1" />
+	<md_alert id="44"  name="The database cryptographic key could not be loaded" severity="AMBER" data_type_id="1" />
+	<md_alert id="45"  name="The Windows SharePoint Services Timer service State" severity="AMBER" data_type_id="1" />
+	<md_alert id="46"  name="Web Service Content" severity="AMBER" data_type_id="1" />
+	<md_alert id="47"  name="Alert Message For Cluster State Connect Status Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="48"  name="Alert Parameter Replacement Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="49"  name="Available Megabytes of Memory is too low" severity="AMBER" data_type_id="1" />
+	<md_alert id="50"  name="Cannot resolve Hostname" severity="AMBER" data_type_id="1" />
+	<md_alert id="51"  name="ConfigMgr 2007 State Message Summary Tasks: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="52"  name="ConfigMgr 2007 Status: Distribution Manager failed to access the source directory for a package" severity="AMBER" data_type_id="1" />
+	<md_alert id="53"  name="Database Out of Space" severity="AMBER" data_type_id="1" />
+	<md_alert id="54"  name="Discovery Data Mapper Module Failed Initialization" severity="AMBER" data_type_id="1" />
+	<md_alert id="55"  name="Drive Array Physical Drive degraded." severity="AMBER" data_type_id="1" />
+	<md_alert id="56"  name="Failed to load index" severity="AMBER" data_type_id="1" />
+	<md_alert id="57"  name="Host error (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="58"  name="IIS 7 Web Server is unavailable" severity="RED" data_type_id="1" />
+	<md_alert id="59"  name="Logical Logical Disk current queue length is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="60"  name="Module registration error detected (module returned an error during registration)" severity="AMBER" data_type_id="1" />
+	<md_alert id="61"  name="MSSQL 2014: Checksum failure while page in cache" severity="AMBER" data_type_id="1" />
+	<md_alert id="62"  name="MSSQL 2014: Could not allocate new page for database. There are no more pages available in filegroup." severity="AMBER" data_type_id="1" />
+	<md_alert id="63"  name="MSSQL 2014: Failure occurred during database recovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="64"  name="MSSQL 2014: SQL Server cannot authenticate using Kerberos because the Service Principal Name (SPN) is missing, misplaced, or duplicated." severity="AMBER" data_type_id="1" />
+	<md_alert id="65"  name="Object Health State data collection process unable to write data to the Data Warehouse" severity="AMBER" data_type_id="1" />
+	<md_alert id="66"  name="Operations Manager Failed to Access the Windows Event Log" severity="AMBER" data_type_id="1" />
+	<md_alert id="67"  name="Search Services: Service Is Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="68"  name="SharePoint: Database Not Found" severity="AMBER" data_type_id="1" />
+	<md_alert id="69"  name="SharePoint: SPHA Configuration Rule Monitor Detects Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="70"  name="Site Synch failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="71"  name="Site System Status Summarizer Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="72"  name="TCP/IP NetBIOS Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="73"  name="TFS Work Item Synchronization creation workflow alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="74"  name="The Microsoft Single Sign-on Service State" severity="AMBER" data_type_id="1" />
+	<md_alert id="75"  name="The Office SharePoint Server Search Service State" severity="AMBER" data_type_id="1" />
+	<md_alert id="76"  name="Total CPU Utilization Percentage is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="77"  name="Updates Install" severity="AMBER" data_type_id="1" />
+	<md_alert id="78"  name="UserProfile Service: Timer Job Failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="79"  name="WAS is stopping because it encountered an error" severity="AMBER" data_type_id="1" />
+	<md_alert id="80"  name="WSUS Services Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="81"  name="WSUS Synchronization Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="82"  name="Alert subscription data source module encountered errors while running" severity="AMBER" data_type_id="1" />
+	<md_alert id="83"  name="An error occurred while the query log table was being created" severity="AMBER" data_type_id="1" />
+	<md_alert id="84"  name="Application Pool disabled due to worker process failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="85"  name="Asset Intelligence Catalog Synchronization Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="86"  name="Availability Group is not ready for automatic failover" severity="AMBER" data_type_id="1" />
+	<md_alert id="87"  name="Available Megabytes Swap Space is too low" severity="AMBER" data_type_id="1" />
+	<md_alert id="88"  name="BizTalk Server: Availability Monitor raised an Error on BAM Star Schema Database" severity="AMBER" data_type_id="1" />
+	<md_alert id="89"  name="BizTalk Server: Availability Monitor raised an Error on BizTalk Business Rule Engine Database" severity="AMBER" data_type_id="1" />
+	<md_alert id="90"  name="Central Site to Primary Site Global Data Sending Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="91"  name="CIO.App.4041.E2E.MMSListener.Monitoring.Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="92"  name="ConfigMgr 2007 Crash Dumps: Monitoring SMS Executive script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="93"  name="Content Directory Disk Space" severity="AMBER" data_type_id="1" />
+	<md_alert id="94"  name="Could not allocate space for object  in database  because the  filegroup is full" severity="AMBER" data_type_id="1" />
+	<md_alert id="95"  name="Data Warehouse configuration synchronization process failed to write data" severity="AMBER" data_type_id="1" />
+	<md_alert id="96"  name="Data Warehouse failed to enumerate database components to be deployed" severity="AMBER" data_type_id="1" />
+	<md_alert id="97"  name="Data Warehouse failed to request a list of management packs from SQL RS server" severity="AMBER" data_type_id="1" />
+	<md_alert id="98"  name="Deployment Status Summarizer Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="99"  name="DSM Event Manager Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="100"  name="Enterprise Content Management: Enterprise Managed Metadata Service Is Inaccessible" severity="AMBER" data_type_id="1" />
+	<md_alert id="101"  name="EventID64 - Certificate Expiry Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="102"  name="Exception occurred whilst connecting to Analysis Services" severity="AMBER" data_type_id="1" />
+	<md_alert id="103"  name="Exception thrown during commit of AMO transaction to Analysis Services" severity="AMBER" data_type_id="1" />
+	<md_alert id="104"  name="Expression Filter Module Failed Initialization" severity="AMBER" data_type_id="1" />
+	<md_alert id="105"  name="Failed to Check for Password Expiration on RunAs Account" severity="AMBER" data_type_id="1" />
+	<md_alert id="106"  name="Failed to perform Web Application discovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="107"  name="Failed to send notification" severity="AMBER" data_type_id="1" />
+	<md_alert id="108"  name="Host connection failure (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="109"  name="Management Point Control Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="110"  name="Max Concurrent API Reached alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="111"  name="Microsoft.SQLServer.2014.AlwaysOn.AvailabilityGroupOnline" severity="AMBER" data_type_id="1" />
+	<md_alert id="112"  name="MSSQL 2014: Database backup should be performed" severity="AMBER" data_type_id="1" />
+	<md_alert id="113"  name="MSSQL 2014: Stolen Server Memory is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="114"  name="MSSQL 2014: The log for database is not available" severity="AMBER" data_type_id="1" />
+	<md_alert id="115"  name="Network Interface or NIC Teaming failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="116"  name="NLB driver has detected one or more sessions corresponding to a port rule that is improperly configured" severity="AMBER" data_type_id="1" />
+	<md_alert id="117"  name="NTFS - File System Corrupt" severity="AMBER" data_type_id="1" />
+	<md_alert id="118"  name="NTFS reported the logical disk is in error or corrupt." severity="AMBER" data_type_id="1" />
+	<md_alert id="119"  name="Power Shell Script failed to run" severity="AMBER" data_type_id="1" />
+	<md_alert id="120"  name="Power sub-system degraded or failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="121"  name="QlikView Distribution Service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="122"  name="Resource Pool Heartbeat Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="123"  name="Run As Account Cannot Log On Locally" severity="AMBER" data_type_id="1" />
+	<md_alert id="124"  name="Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="125"  name="SMSExec Windows Service Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="126"  name="SQL Reporting Service Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="127"  name="SQL Server I/O Request Time Out - Event ID 833"  severity="AMBER" data_type_id="1" />
+	<md_alert id="128"  name="SQLServerAgent could not be started" severity="RED" data_type_id="1" />
+	<md_alert id="129"  name="The configuration file could not be saved" severity="AMBER" data_type_id="1" />
+	<md_alert id="130"  name="The directory specified for caching compressed content is invalid" severity="AMBER" data_type_id="1" />
+	<md_alert id="131"  name="Windows 2008 SMTP Virtual Server is Unavailable." severity="AMBER" data_type_id="1" />
+	<md_alert id="132"  name="Windows Server 2012 NTFS File System Corrupt" severity="AMBER" data_type_id="1" />
+	<md_alert id="133"  name="WMI is unhealthy" severity="AMBER" data_type_id="1" />
+	<md_alert id="134"  name="Accenture.SNP.Publisher service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="135"  name="An error occurred while starting the query log" severity="AMBER" data_type_id="1" />
+	<md_alert id="136"  name="An SQL job failed to complete successfully" severity="AMBER" data_type_id="1" />
+	<md_alert id="137"  name="APM Write Action Failed to Submit an Event to the Database" severity="AMBER" data_type_id="1" />
+	<md_alert id="138"  name="Application Pool identity is invalid" severity="AMBER" data_type_id="1" />
+	<md_alert id="139"  name="ASP application error occurred" severity="AMBER" data_type_id="1" />
+	<md_alert id="140"  name="Availability Group is offline" severity="AMBER" data_type_id="1" />
+	<md_alert id="141"  name="Blocked Session(s)" severity="AMBER" data_type_id="1" />
+	<md_alert id="142"  name="CIO.App.3729.AP5568.SuscriberService.Suscriber" severity="AMBER" data_type_id="1" />
+	<md_alert id="143"  name="CIO.App.4592.SolutionPricing.CPHostService.Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="144"  name="Client remediation status alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="145"  name="Cluster network is partitioned" severity="AMBER" data_type_id="1" />
+	<md_alert id="146"  name="CommonDemandPublisherService Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="147"  name="ConfigMgr 2007 Device Management Point: MP Control Manager failed to send an HTTP request to the Device Management Point" severity="AMBER" data_type_id="1" />
+	<md_alert id="148"  name="ConfigMgr 2007 Management Point Health: State" severity="AMBER" data_type_id="1" />
+	<md_alert id="149"  name="Consolidator Module Failed Initialization" severity="AMBER" data_type_id="1" />
+	<md_alert id="150"  name="Correlation Module Failed Initialization" severity="AMBER" data_type_id="1" />
+	<md_alert id="151"  name="CRITICAL ERROR: The message engine failed to retrieve the configuration from the database" severity="AMBER" data_type_id="1" />
+	<md_alert id="152"  name="Data Access Service - Windows Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="153"  name="Data Access Service SPN Not Registered" severity="AMBER" data_type_id="1" />
+	<md_alert id="154"  name="Data Warehouse alert data dedicated maintenance process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="155"  name="Data Warehouse performance standard data set discovery failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="156"  name="Data Warehouse relationship synchronization process failed to write data" severity="AMBER" data_type_id="1" />
+	<md_alert id="157"  name="Database consistency errors found" severity="AMBER" data_type_id="1" />
+	<md_alert id="158"  name="Database log file is full. Back up the transaction log for the database to free up some log space" severity="AMBER" data_type_id="1" />
+	<md_alert id="159"  name="Dell OMSS Patrol Read found an uncorrectable media error" severity="AMBER" data_type_id="1" />
+	<md_alert id="160"  name="DNS Client Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="161"  name="DSM Data Manager Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="162"  name="DSM Storage Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="163"  name="EM Test Alert - Warning OPS" severity="AMBER" data_type_id="1" />
+	<md_alert id="164"  name="Fail to access site system alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="165"  name="Failed to perform Web Site discovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="166"  name="Host connection , power state (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="167"  name="Host connection , power state (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="168"  name="IIS 7 Web Site is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="169"  name="Load balanced application is unhealthy" severity="AMBER" data_type_id="1" />
+	<md_alert id="170"  name="Logical consistency error after performing I/O on page" severity="AMBER" data_type_id="1" />
+	<md_alert id="171"  name="Logical Disk is not online" severity="AMBER" data_type_id="1" />
+	<md_alert id="172"  name="ManagemyRecords - MSSQLSERVER Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="173"  name="ManagemyRecords - OMNIGroupServer Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="174"  name="Microsoft.SQLServer.2012.AlwaysOn.AvailabilityReplicaIsConnected" severity="AMBER" data_type_id="1" />
+	<md_alert id="175"  name="MSSQL 2014: Database consistency check performed with no errors" severity="AMBER" data_type_id="1" />
+	<md_alert id="176"  name="MSSQL 2014: IS Package Failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="177"  name="MSSQL 2014: SQL Server has failed to allocate sufficient memory to run the query" severity="AMBER" data_type_id="1" />
+	<md_alert id="178"  name="Networker Error | Status: Failed Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="179"  name="Networker Error | Status: Warning Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="180"  name="Operations Manager failed to consolidate data" severity="AMBER" data_type_id="1" />
+	<md_alert id="181"  name="Operations Manager failed to run a WMI query for WMI events" severity="AMBER" data_type_id="1" />
+	<md_alert id="182"  name="OS Error occurred while performing I/O on page" severity="AMBER" data_type_id="1" />
+	<md_alert id="183"  name="PA.Processors.Emails Service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="184"  name="Performance data collection process unable to write data to the Data Warehouse" severity="AMBER" data_type_id="1" />
+	<md_alert id="185"  name="Potential memory leak in web application code" severity="AMBER" data_type_id="1" />
+	<md_alert id="186"  name="Primary Site to Central Site Global Data Receiving Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="187"  name="Primary Site to Central Site Site Data Sending Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="188"  name="Run As Account Configuration Processing Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="189"  name="Scheduler Data Source Module Failed Initialization" severity="AMBER" data_type_id="1" />
+	<md_alert id="190"  name="SharePoint: Admin Service Is Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="191"  name="SharePoint: Timer Service Is Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="192"  name="Software Update Point Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="193"  name="SQL Server Agent Windows Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="194"  name="SSL Certificate Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="195"  name="The backup operation for the cluster configuration data has been canceled due to an abort request" severity="AMBER" data_type_id="1" />
+	<md_alert id="196"  name="TRIM Event - Rule Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="197"  name="Unable to access witness resource" severity="AMBER" data_type_id="1" />
+	<md_alert id="198"  name="WAS encountered an error attempting to look up the built in IIS_IUSRS group" severity="AMBER" data_type_id="1" />
+	<md_alert id="199"  name="Web Site binding is already in use" severity="AMBER" data_type_id="1" />
+	<md_alert id="200"  name="Workflow Initialization: Failed to start a workflow that runs a process or script" severity="AMBER" data_type_id="1" />
+	<md_alert id="201"  name="AirWatch Cloud Connector Service is Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="202"  name="Alert subscription data source module queries taking longer than expected." severity="AMBER" data_type_id="1" />
+	<md_alert id="203"  name="Alert Suppression Replacement Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="204"  name="All Management Servers Pool Unavailable." severity="AMBER" data_type_id="1" />
+	<md_alert id="205"  name="BizTalk Server: Availability Monitor raised an Error on Receive Location" severity="AMBER" data_type_id="1" />
+	<md_alert id="206"  name="BizTalk Server: Availability Monitor raised an Error on Send Port" severity="AMBER" data_type_id="1" />
+	<md_alert id="207"  name="Cannot connect to storage (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="208"  name="Central Site to Primary Site Global Data Receiving Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="209"  name="Component Monitor Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="210"  name="ConfigMgr 2007 Component Health: Monitoring script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="211"  name="ConfigMgr 2007 Management Point: MP Control Manager failed to send an HTTP request to the Management Point" severity="AMBER" data_type_id="1" />
+	<md_alert id="212"  name="ConfigMgr 2007 Perf Threshold: Site Server Inbox schedule.boxoutboxesLAN Backlog > 10,000 over 3 hours" severity="AMBER" data_type_id="1" />
+	<md_alert id="213"  name="ConfigMgr 2007 Site Hierarchy Discovery: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="214"  name="Data Integrity Warning" severity="AMBER" data_type_id="1" />
+	<md_alert id="215"  name="Data Warehouse alert standard data set discovery failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="216"  name="Data Warehouse domain synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="217"  name="Data Warehouse event data writer process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="218"  name="Data Warehouse failed to request a list of management packs that have all of their dependencies deployed in the Data Warehouse database" severity="AMBER" data_type_id="1" />
+	<md_alert id="219"  name="Data Warehouse performance data writer process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="220"  name="Database" severity="AMBER" data_type_id="1" />
+	<md_alert id="221"  name="Datastore cluster is out of space (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="222"  name="DHCP Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="223"  name="Duplicate IP Detected" severity="AMBER" data_type_id="1" />
+	<md_alert id="224"  name="Failed to perform Web Server properties discovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="225"  name="Health check for IP interface failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="226"  name="IIS 7 server role is unavailable." severity="AMBER" data_type_id="1" />
+	<md_alert id="227"  name="Index is corrupt" severity="AMBER" data_type_id="1" />
+	<md_alert id="228"  name="IS Package Failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="229"  name="Log Backup Failed to Complete" severity="AMBER" data_type_id="1" />
+	<md_alert id="230"  name="Logical Disk Free Space is low" severity="AMBER" data_type_id="1" />
+	<md_alert id="231"  name="Maintenance task failure alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="232"  name="Management Configuration Service group failed to perform agent assignment work item for a period of time" severity="AMBER" data_type_id="1" />
+	<md_alert id="233"  name="Management Configuration Service group failed to perform snapshot synchronization work item for a period of time" severity="AMBER" data_type_id="1" />
+	<md_alert id="234"  name="ManagemyRecords - TRIMIDOLContent2 Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="235"  name="Microsoft.SQLServer.2012.AlwaysOn.ClusterStateMonitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="236"  name="Microsoft.SQLServer.2014.AlwaysOn.RoleOfAvailabilityReplicaIsHealthy" severity="AMBER" data_type_id="1" />
+	<md_alert id="237"  name="MSSQL 2014: Cannot start SQL Server Service Broker on a database" severity="AMBER" data_type_id="1" />
+	<md_alert id="238"  name="MSSQL 2014: Database Backup Failed To Complete" severity="AMBER" data_type_id="1" />
+	<md_alert id="239"  name="MSSQL 2014: Database is in offline/recovery pending/suspect/emergency state" severity="AMBER" data_type_id="1" />
+	<md_alert id="240"  name="MSSQL 2014: Database log file is full. Back up the transaction log for the database to free up some log space" severity="AMBER" data_type_id="1" />
+	<md_alert id="241"  name="MSSQL 2014: Error while undoing logged operation in database" severity="AMBER" data_type_id="1" />
+	<md_alert id="242"  name="MSSQL 2014: Failed to create AppDomain" severity="AMBER" data_type_id="1" />
+	<md_alert id="243"  name="MSSQL 2014: Failed to open database or transaction log file" severity="AMBER" data_type_id="1" />
+	<md_alert id="244"  name="NGIP.Agent service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="245"  name="OM connector Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="246"  name="Partitioning and grooming has not completed recently" severity="AMBER" data_type_id="1" />
+	<md_alert id="247"  name="Power Shell script was dropped" severity="AMBER" data_type_id="1" />
+	<md_alert id="248"  name="Primary Site to Central Site Global Data Sending Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="249"  name="Recipient address is not valid" severity="AMBER" data_type_id="1" />
+	<md_alert id="250"  name="Reporting Services Point Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="251"  name="Search Services: Indexer Error Detected" severity="AMBER" data_type_id="1" />
+	<md_alert id="252"  name="SharePoint: SPHA Security Rule Monitor Detects Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="253"  name="Site Component Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="254"  name="Too many requests for performance counter data have timed out" severity="AMBER" data_type_id="1" />
+	<md_alert id="255"  name="Windows Server 2012 SMTP Virtual Server is Unavailable." severity="AMBER" data_type_id="1" />
+	<md_alert id="256"  name="Agent processor utilization over threshold" severity="AMBER" data_type_id="1" />
+	<md_alert id="257"  name="Alert for TrimEvent Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="258"  name="Application Pool worker process terminated unexpectedly" severity="AMBER" data_type_id="1" />
+	<md_alert id="259"  name="Available Megabytes Memory is too low" severity="AMBER" data_type_id="1" />
+	<md_alert id="260"  name="Available Memory Less Than 10 %" severity="AMBER" data_type_id="1" />
+	<md_alert id="261"  name="Cannot connect to storage (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="262"  name="Client active status alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="263"  name="Cluster network interface is unreachable by at least one other cluster node attached to the network" severity="AMBER" data_type_id="1" />
+	<md_alert id="264"  name="Component Status Summarizer Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="265"  name="ConfigMgr 2007 dependent service running: Update Services" severity="AMBER" data_type_id="1" />
+	<md_alert id="266"  name="ConfigMgr 2007 Perf Threshold: Site Server Scheduler Send Requests Backlog > 10,000 over 3 hours" severity="AMBER" data_type_id="1" />
+	<md_alert id="267"  name="ConfigMgr 2007 Status: Distribution Manager failed to decompress a package because there is not enough free disk space" severity="AMBER" data_type_id="1" />
+	<md_alert id="268"  name="ConfigMgr 2007 Status: Object Replication Manager failed to process changes to SMS Objects but will retry on next processing cycle" severity="AMBER" data_type_id="1" />
+	<md_alert id="269"  name="ConfigMgr 2007 Status: Scheduler does not have an address defined for sending to a site" severity="AMBER" data_type_id="1" />
+	<md_alert id="270"  name="ConfigMgr Replication Issue" severity="AMBER" data_type_id="1" />
+	<md_alert id="271"  name="Count Files on  D:appsMailerSMTP" severity="AMBER" data_type_id="1" />
+	<md_alert id="272"  name="Data Warehouse domain synchronization process failed to write data" severity="AMBER" data_type_id="1" />
+	<md_alert id="273"  name="Data Warehouse object health state data writer process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="274"  name="Database connectivity is lost" severity="AMBER" data_type_id="1" />
+	<md_alert id="275"  name="Elastic Search Services Monitoring" severity="AMBER" data_type_id="1" />
+	<md_alert id="276"  name="Event ID# 6005 ? Server Restarted" severity="AMBER" data_type_id="1" />
+	<md_alert id="277"  name="EventID 5719 - 2723 CIO Virtualization Monitoring" severity="AMBER" data_type_id="1" />
+	<md_alert id="278"  name="Failed to open database or transaction log file" severity="AMBER" data_type_id="1" />
+	<md_alert id="279"  name="Failed to perform initialization of IIS discovery module" severity="AMBER" data_type_id="1" />
+	<md_alert id="280"  name="Generic application could not be brought online due to a service startup error" severity="AMBER" data_type_id="1" />
+	<md_alert id="281"  name="Inbox Monitor Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="282"  name="Logical disk current queue length is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="283"  name="Management Configuration Service failed to process agent configuration request" severity="AMBER" data_type_id="1" />
+	<md_alert id="284"  name="Management Point Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="285"  name="Microsoft.SQLServer.2012.AlwaysOn.AutomaticFailoverReadiness" severity="AMBER" data_type_id="1" />
+	<md_alert id="286"  name="Microsoft.SQLServer.2012.AlwaysOn.RoleOfAvailabilityReplicaIsHealthy" severity="AMBER" data_type_id="1" />
+	<md_alert id="287"  name="Migration error (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="288"  name="MSSQL 2014: Availability Group is not ready for automatic failover" severity="AMBER" data_type_id="1" />
+	<md_alert id="289"  name="MSSQL 2014: Cannot open backup device." severity="AMBER" data_type_id="1" />
+	<md_alert id="290"  name="MSSQL 2014: File group is running out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="291"  name="Network connectivity lost (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="292"  name="Network connectivity lost (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="293"  name="Network Device is Not Responding" severity="AMBER" data_type_id="1" />
+	<md_alert id="294"  name="QlikView Directory Service Connector is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="295"  name="Search Services: Query Component Critical Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="296"  name="Service Check Probe Module Failed Execution" severity="AMBER" data_type_id="1" />
+	<md_alert id="297"  name="Site Server Component Service Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="298"  name="SMTP Server is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="299"  name="SQL Server Broker disabled" severity="AMBER" data_type_id="1" />
+	<md_alert id="300"  name="SQL Server cannot authenticate using Kerberos because the Service Principal Name (SPN) is missing, misplaced, or duplicated." severity="AMBER" data_type_id="1" />
+	<md_alert id="301"  name="SQL Server Database Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="302"  name="SQL Server Integration Services Windows Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="303"  name="System Center Orchestrator Runbook Server Call to ActionServerStorage Refused Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="304"  name="System Center Orchestrator Runbook Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="305"  name="The last query server was removed from rotation" severity="AMBER" data_type_id="1" />
+	<md_alert id="306"  name="The Windows SharePoint Services Search service State" severity="AMBER" data_type_id="1" />
+	<md_alert id="307"  name="The Windows SharePoint Services Tracing service State" severity="AMBER" data_type_id="1" />
+	<md_alert id="308"  name="Windows Event Log Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="309"  name="Windows Process Activation service is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="310"  name="Windows Remote Management Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="311"  name="WSUS Control Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="312"  name="Accenture.CP.Host service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="313"  name="Access Denied Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="314"  name="AirWatchCloudConnector - Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="315"  name="Alert subscription data source module encountered errors while running." severity="AMBER" data_type_id="1" />
+	<md_alert id="316"  name="APM .NET Server-Side monitoring Configuration Error or Conflict" severity="AMBER" data_type_id="1" />
+	<md_alert id="317"  name="Central Site to Primary Site Site Data Receiving Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="318"  name="CIO.App.2133.EBI.NGIPServices.Monitoring.Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="319"  name="Client Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="320"  name="Cluster IP address resource cannot be brought online because of a duplicate IP address" severity="AMBER" data_type_id="1" />
+	<md_alert id="321"  name="Cluster network name resource failed to register DNS name" severity="AMBER" data_type_id="1" />
+	<md_alert id="322"  name="Cluster network name resource failed to update the DNS A record" severity="AMBER" data_type_id="1" />
+	<md_alert id="323"  name="Communication was lost and reestablished between cluster nodes" severity="AMBER" data_type_id="1" />
+	<md_alert id="324"  name="ConfigMgr 2007 Component Health: SMS_MP_CONTROL_MANAGER state" severity="AMBER" data_type_id="1" />
+	<md_alert id="325"  name="ConfigMgr 2007 Component Health: SMS_SITE_COMPONENT_MANAGER state" severity="AMBER" data_type_id="1" />
+	<md_alert id="326"  name="ConfigMgr 2007 Site Maintenance Tasks: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="327"  name="ConfigMgr 2007 Status: Despooler could not process an instruction and package file from a site because the signature on the package was invalid" severity="AMBER" data_type_id="1" />
+	<md_alert id="328"  name="ConfigMgr 2007 Status: SMS State System error processing message file" severity="AMBER" data_type_id="1" />
+	<md_alert id="329"  name="ConfigMgr Server Component Issue" severity="AMBER" data_type_id="1" />
+	<md_alert id="330"  name="Could not open error log file" severity="AMBER" data_type_id="1" />
+	<md_alert id="331"  name="Critical Error Find in TintriHealthCheck" severity="AMBER" data_type_id="1" />
+	<md_alert id="332"  name="Data Warehouse failed to request a list of management packs installed for the management group" severity="AMBER" data_type_id="1" />
+	<md_alert id="333"  name="Data Warehouse monitor initial state data synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="334"  name="Data Warehouse performance data dedicated maintenance process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="335"  name="Database Offline" severity="RED" data_type_id="1" />
+	<md_alert id="336"  name="Dell OMSS Initialization sequence of SAS components failed during system startup" severity="AMBER" data_type_id="1" />
+	<md_alert id="337"  name="Drive Array Accelerator degraded, failed or battery failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="338"  name="ETL Module execution failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="339"  name="Event data collection process unable to write data to the Data Warehouse" severity="AMBER" data_type_id="1" />
+	<md_alert id="340"  name="EventID 14151 Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="341"  name="HP Insight NIC Agents failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="342"  name="HP System Management Homepage failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="343"  name="I/O LSI_SAS Device Issues - Event ID 129" severity="AMBER" data_type_id="1" />
+	<md_alert id="344"  name="IIS 8 Web Site is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="345"  name="ISAPI application error detected" severity="AMBER" data_type_id="1" />
+	<md_alert id="346"  name="Logical Disk Fragmentation Level is high" severity="AMBER" data_type_id="1" />
+	<md_alert id="347"  name="Login failed: Account locked out" severity="AMBER" data_type_id="1" />
+	<md_alert id="348"  name="Microsoft.SQLServer.2014.AgentJob.JobLastRunState" severity="AMBER" data_type_id="1" />
+	<md_alert id="349"  name="MSSQL 2014: Cannot create file" severity="AMBER" data_type_id="1" />
+	<md_alert id="350"  name="MSSQL 2014: Cannot recover the master database. Exiting." severity="AMBER" data_type_id="1" />
+	<md_alert id="351"  name="MSSQL 2014: Could not allocate space for object in database because the filegroup is full" severity="AMBER" data_type_id="1" />
+	<md_alert id="352"  name="MSSQL 2014: Distributed transaction was aborted by MSDTC" severity="AMBER" data_type_id="1" />
+	<md_alert id="353"  name="MSSQL 2014: WSFC cluster is offline" severity="AMBER" data_type_id="1" />
+	<md_alert id="354"  name="NLB detected duplicate cluster subnets" severity="AMBER" data_type_id="1" />
+	<md_alert id="355"  name="NTFS - File System Corrupt (Extended)" severity="AMBER" data_type_id="1" />
+	<md_alert id="356"  name="Query server removed from rotation" severity="AMBER" data_type_id="1" />
+	<md_alert id="357"  name="SCCM Service Down" severity="AMBER" data_type_id="1" />
+	<md_alert id="358"  name="SQL Server Port Not Correct." severity="AMBER" data_type_id="1" />
+	<md_alert id="359"  name="The log for database is not available" severity="AMBER" data_type_id="1" />
+	<md_alert id="360"  name="Used total bandwidth is over threshold" severity="AMBER" data_type_id="1" />
+	<md_alert id="361"  name="Worker process failed to initialize communication with the W3SVC and therefore could not be started" severity="AMBER" data_type_id="1" />
+	<md_alert id="362"  name="Workflow Initialization: Failed to start a process or script" severity="AMBER" data_type_id="1" />
+	<md_alert id="363"  name="A fatal error occurred in .NET Framework runtime" severity="AMBER" data_type_id="1" />
+	<md_alert id="364"  name="Alert for EventID 9998" severity="AMBER" data_type_id="1" />
+	<md_alert id="365"  name="An error occurred while communicating with the SMTP server" severity="AMBER" data_type_id="1" />
+	<md_alert id="366"  name="Backward Compatibility Script Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="367"  name="BizTalk Server: Availability Monitor raised an Error on BizTalk Tracking Database" severity="AMBER" data_type_id="1" />
+	<md_alert id="368"  name="CIO App - 4229 NextGenerAccen monitoring ESS" severity="AMBER" data_type_id="1" />
+	<md_alert id="369"  name="CIO.App.4298.CommonDemand.PHServices.PublisherProactiveHiring" severity="AMBER" data_type_id="1" />
+	<md_alert id="370"  name="Cluster resource failed" severity="RED" data_type_id="1" />
+	<md_alert id="371"  name="Cluster resource failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="372"  name="Cluster resource group offline or partially online" severity="AMBER" data_type_id="1" />
+	<md_alert id="373"  name="Cluster service failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="374"  name="ConfigMgr 2007 Component Health: SMS_WSUS_SYNC_MANAGER state" severity="AMBER" data_type_id="1" />
+	<md_alert id="375"  name="ConfigMgr 2007 NLB Management Point Health: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="376"  name="ConfigMgr 2007 Software Update Point Health: Script error" severity="AMBER" data_type_id="1" />
+	<md_alert id="377"  name="ConfigMgr 2007 Software Update Point Health: State" severity="AMBER" data_type_id="1" />
+	<md_alert id="378"  name="ConfigMgr 2007 Status: Management Point failed to receive SQL Server connection settings" severity="AMBER" data_type_id="1" />
+	<md_alert id="379"  name="ConfigMgr 2007 Status: SMS State System summary task failed to execute" severity="AMBER" data_type_id="1" />
+	<md_alert id="380"  name="Content distribution alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="381"  name="Data Warehouse managed object synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="382"  name="EM Test Alert - Critical APP" severity="AMBER" data_type_id="1" />
+	<md_alert id="383"  name="EM Test Alert - Warning SQL" severity="AMBER" data_type_id="1" />
+	<md_alert id="384"  name="Error backing up registry to Shared Services Provider database" severity="AMBER" data_type_id="1" />
+	<md_alert id="385"  name="Event ID 1000 - Application Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="386"  name="Event ID 1025 ? .NET Runtime" severity="AMBER" data_type_id="1" />
+	<md_alert id="387"  name="Event ID 1111 - Server Information Changes Tracking (Rule)" severity="AMBER" data_type_id="1" />
+	<md_alert id="388"  name="Event ID 2000_myRequests:Siebel Web Service Custom Alert_Error Code: 10054" severity="AMBER" data_type_id="1" />
+	<md_alert id="389"  name="Event log is full" severity="AMBER" data_type_id="1" />
+	<md_alert id="390"  name="Failed to retrieve Application Pool state" severity="AMBER" data_type_id="1" />
+	<md_alert id="391"  name="File Dispatch Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="392"  name="Free Disk Space On Drive" severity="AMBER" data_type_id="1" />
+	<md_alert id="393"  name="Heartbeat failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="394"  name="HP Insight Foundation Agents failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="395"  name="IIS 7 Application Pool is unavailable" severity="RED" data_type_id="1" />
+	<md_alert id="396"  name="IIS 8 server role is unavailable." severity="AMBER" data_type_id="1" />
+	<md_alert id="397"  name="Invalid reference to File ID" severity="AMBER" data_type_id="1" />
+	<md_alert id="398"  name="IP address conflict" severity="AMBER" data_type_id="1" />
+	<md_alert id="399"  name="ManagemyRecords -  TRIMIDOLService Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="400"  name="MSSQL 2014: DB Average Wait Time is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="401"  name="MSSQL 2014: Log Shipping Source" severity="AMBER" data_type_id="1" />
+	<md_alert id="402"  name="MSSQL 2014: Login failed: Password must be changed" severity="AMBER" data_type_id="1" />
+	<md_alert id="403"  name="NTFS - Delayed Write Lost" severity="AMBER" data_type_id="1" />
+	<md_alert id="404"  name="One of the BizTalk application services is not running" severity="AMBER" data_type_id="1" />
+	<md_alert id="405"  name="Operations Manager failed to start a process" severity="AMBER" data_type_id="1" />
+	<md_alert id="406"  name="Operations Manager Web Console Unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="407"  name="Physical disk current queue length is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="408"  name="SQL Server Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="409"  name="Sweep Synch failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="410"  name="System Center Management Health Service Credentials Not Found Alert Message" severity="AMBER" data_type_id="1" />
+	<md_alert id="411"  name="System Center Management Health Service Unloaded System Rule(s)" severity="AMBER" data_type_id="1" />
+	<md_alert id="412"  name="System Center Orchestrator Management Server Database Connection Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="413"  name="The ESSO service is not running." severity="AMBER" data_type_id="1" />
+	<md_alert id="414"  name="The metadata object could not be loaded" severity="AMBER" data_type_id="1" />
+	<md_alert id="415"  name="The Microsoft Internet Information Services State" severity="AMBER" data_type_id="1" />
+	<md_alert id="416"  name="The OLE DB provider reported an error" severity="AMBER" data_type_id="1" />
+	<md_alert id="417"  name="The WMI Service is not running" severity="AMBER" data_type_id="1" />
+	<md_alert id="418"  name="Unable to Verify Run As Account" severity="AMBER" data_type_id="1" />
+	<md_alert id="419"  name="WAS encountered an error trying to read configuration" severity="AMBER" data_type_id="1" />
+	<md_alert id="420"  name="Windows Server Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="421"  name="Workflow Initialization: Failed to start a workflow that queries WMI" severity="AMBER" data_type_id="1" />
+	<md_alert id="422"  name="WSFC cluster is offline" severity="AMBER" data_type_id="1" />
+	<md_alert id="423"  name="Auto Update Statistics Configuration Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="424"  name="BigFile Server was restarted" severity="AMBER" data_type_id="1" />
+	<md_alert id="425"  name="BizTalk Server: Availability Monitor for suspended instances raised an Error on Receive Port" severity="AMBER" data_type_id="1" />
+	<md_alert id="426"  name="Catalog Synchronization" severity="AMBER" data_type_id="1" />
+	<md_alert id="427"  name="CIO.App.4230.ISeGRC.RSAServices.RSAArcherLDAPSynchronization" severity="AMBER" data_type_id="1" />
+	<md_alert id="428"  name="CIO.App.4298.CommonDemand.PHServices.PHSubscriberService" severity="AMBER" data_type_id="1" />
+	<md_alert id="429"  name="Cluster Node is not online." severity="AMBER" data_type_id="1" />
+	<md_alert id="430"  name="ConfigMgr 2007 Perf Threshold: MP Get SDM Package (Total Requests) > 10,000 over 3 hours" severity="AMBER" data_type_id="1" />
+	<md_alert id="431"  name="ConfigMgr 2007 Status: Site Component Manager failed to reinstall site system component" severity="AMBER" data_type_id="1" />
+	<md_alert id="432"  name="Data Warehouse configuration synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="433"  name="Data Warehouse managed object synchronization process failed to write data" severity="AMBER" data_type_id="1" />
+	<md_alert id="434"  name="Database consistency check performed with no errors" severity="AMBER" data_type_id="1" />
+	<md_alert id="435"  name="Distribution fails to access network alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="436"  name="Dss Auth Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="437"  name="Elasticsearch 1.4.2 elasticsearch-service-x64 Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="438"  name="EM Test Alert - Warning APP" severity="AMBER" data_type_id="1" />
+	<md_alert id="439"  name="Enlist of MSDTC transaction failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="440"  name="Event ID 0 - Enterprise Library Semantic Logging Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="441"  name="Event ID 1112 - AIR IDs Changes Tracking" severity="AMBER" data_type_id="1" />
+	<md_alert id="442"  name="Failed to perform Application Pool discovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="443"  name="IIS 8 Web Server is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="444"  name="Log Shipping Destination" severity="AMBER" data_type_id="1" />
+	<md_alert id="445"  name="Management point HINV endpoint queue alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="446"  name="ManagemyRecords - TRIMIDOLImageService Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="447"  name="MME NSB Subscriber Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="448"  name="MSSQL 2014: An error occurred while reading the log for database" severity="AMBER" data_type_id="1" />
+	<md_alert id="449"  name="MSSQL 2014: Availability Group is offline" severity="AMBER" data_type_id="1" />
+	<md_alert id="450"  name="MSSQL 2014: Log Shipping Destination" severity="AMBER" data_type_id="1" />
+	<md_alert id="451"  name="MSSQL 2014: OS Error occurred while performing I/O on page" severity="AMBER" data_type_id="1" />
+	<md_alert id="452"  name="MSSQL 2014: SQL Server Agent could not be started" severity="AMBER" data_type_id="1" />
+	<md_alert id="453"  name="MSSQL 2014: SQL Server Agent Windows Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="454"  name="MSSQL 2014: SQL Server Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="455"  name="NLB Cluster unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="456"  name="OleDB: Results Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="457"  name="Operating System error encountered" severity="AMBER" data_type_id="1" />
+	<md_alert id="458"  name="Primary site to Secnodary Site Global Data Receiving Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="459"  name="Primary site to Secnodary Site Global Data Sending Not Working" severity="AMBER" data_type_id="1" />
+	<md_alert id="460"  name="Reporting Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="461"  name="Sender connection failure alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="462"  name="Service entered unpredictable state" severity="AMBER" data_type_id="1" />
+	<md_alert id="463"  name="Simple Auth Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="464"  name="Slurper.CD.demandordersOnP Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="465"  name="SQL Server Disk Space Not Sufficient" severity="AMBER" data_type_id="1" />
+	<md_alert id="466"  name="System Center Management Health Service Unable to Process New Configuration" severity="AMBER" data_type_id="1" />
+	<md_alert id="467"  name="System Center Orchestrator Runbook Server Monitor Service Database Connection Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="468"  name="Unable to Render report on requested environment" severity="AMBER" data_type_id="1" />
+	<md_alert id="469"  name="vSphere HA virtual machine failover failed (Critical)" severity="AMBER" data_type_id="1" />
+	<md_alert id="470"  name="WAS received a change notification, but was unable to process it correctly" severity="AMBER" data_type_id="1" />
+	<md_alert id="471"  name="WSUS Synchronization Failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="472"  name="% Free Space is too low" severity="AMBER" data_type_id="1" />
+	<md_alert id="473"  name="[Warning] A member was added to a security-enabled local group." severity="AMBER" data_type_id="1" />
+	<md_alert id="474"  name="Alert generation was temporarily suspended due to too many alerts." severity="AMBER" data_type_id="1" />
+	<md_alert id="475"  name="An error occurred in the Service Broker manager" severity="AMBER" data_type_id="1" />
+	<md_alert id="476"  name="AutosysIntegration Process Mem higher 1G" severity="AMBER" data_type_id="1" />
+	<md_alert id="477"  name="Available Memory less then 5% Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="478"  name="CCMExec CPU Usage is Too High" severity="AMBER" data_type_id="1" />
+	<md_alert id="479"  name="CIO.App.4230.ISeGRC.RSAServices.RSAArcherConfiguration" severity="AMBER" data_type_id="1" />
+	<md_alert id="480"  name="CIO.App.4757.OctopusDeploy.Monitoring" severity="AMBER" data_type_id="1" />
+	<md_alert id="481"  name="CIO.App.4902.IEC.IECServices.Monitoring.AlertWindowService" severity="AMBER" data_type_id="1" />
+	<md_alert id="482"  name="Cluster Network Interface is not online." severity="AMBER" data_type_id="1" />
+	<md_alert id="483"  name="Cluster resource degraded." severity="AMBER" data_type_id="1" />
+	<md_alert id="484"  name="ConfigMgr 2007 dependent service running: IIS Admin Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="485"  name="ConfigMgr 2007 Device Management Point Health: State" severity="AMBER" data_type_id="1" />
+	<md_alert id="486"  name="ConfigMgr 2007 Status: Despooler failed to decompress a package" severity="AMBER" data_type_id="1" />
+	<md_alert id="487"  name="ConfigMgr 2007 Status: Sender encountered errors while sending software distribution package" severity="AMBER" data_type_id="1" />
+	<md_alert id="488"  name="ConfigMgr 2007 Status: Site Component Manager failed to deinstall all SMS server components from site system" severity="AMBER" data_type_id="1" />
+	<md_alert id="489"  name="ConfigMgr 2007 Status: SMS State System encountered a corrupted message file" severity="AMBER" data_type_id="1" />
+	<md_alert id="490"  name="Content Synchronization" severity="AMBER" data_type_id="1" />
+	<md_alert id="491"  name="Could not write a CHECKPOINT record in database because the log is out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="492"  name="Data Warehouse alert data writer process failed to perform maintenance operation" severity="AMBER" data_type_id="1" />
+	<md_alert id="493"  name="Data Warehouse relationship synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="494"  name="Dell OMSA Voltage sensor value unknown" severity="AMBER" data_type_id="1" />
+	<md_alert id="495"  name="Elasticsearch 1.4.2 elasticsearch-service-x64-client Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="496"  name="EM Test Alert - Critical OPS" severity="AMBER" data_type_id="1" />
+	<md_alert id="497"  name="EMC SI Service Status" severity="AMBER" data_type_id="1" />
+	<md_alert id="498"  name="ERROR: An attempt to connect to a BizTalk database failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="499"  name="Event ID# 6006 ? Server Shutdown/Restart" severity="AMBER" data_type_id="1" />
+	<md_alert id="500"  name="Failed to load safe control assembly path" severity="AMBER" data_type_id="1" />
+	<md_alert id="501"  name="Failed to Ping Computer" severity="AMBER" data_type_id="1" />
+	<md_alert id="502"  name="Failure occurred during database recovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="503"  name="Free Space Warning (%) For Cluster Disk" severity="AMBER" data_type_id="1" />
+	<md_alert id="504"  name="Inbox Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="505"  name="Invalid application path" severity="AMBER" data_type_id="1" />
+	<md_alert id="506"  name="Invalid web site bindings" severity="AMBER" data_type_id="1" />
+	<md_alert id="507"  name="MSSQL 2014: CREATE FILE encountered operating system error" severity="AMBER" data_type_id="1" />
+	<md_alert id="508"  name="Outbound Queue Backlog" severity="AMBER" data_type_id="1" />
+	<md_alert id="509"  name="PA.Processors.Notifications Service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="510"  name="Percentage Logical Disk Free Space is low" severity="AMBER" data_type_id="1" />
+	<md_alert id="511"  name="Performance data collection process unable to store data in the Data Warehouse in a timely manner" severity="AMBER" data_type_id="1" />
+	<md_alert id="512"  name="Processing Backlogged Events Taking a Long Time" severity="AMBER" data_type_id="1" />
+	<md_alert id="513"  name="Run As Account Could Not Log On" severity="AMBER" data_type_id="1" />
+	<md_alert id="514"  name="Run As Account does not exist on the target system or does not have enough permissions" severity="AMBER" data_type_id="1" />
+	<md_alert id="515"  name="SERVICE UNAVAILABLE: All receive locations are being temporarily disabled because either the BizTalk MessageBox or the BizTalk Management database is not available" severity="AMBER" data_type_id="1" />
+	<md_alert id="516"  name="SharePoint: SPHA Availability Rule Monitor Detects Failure" severity="AMBER" data_type_id="1" />
+	<md_alert id="517"  name="Silent Clients" severity="AMBER" data_type_id="1" />
+	<md_alert id="518"  name="Slurper.CD.drainer Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="519"  name="SQL Server Assertion" severity="AMBER" data_type_id="1" />
+	<md_alert id="520"  name="SQL Server terminating because of system shutdown" severity="AMBER" data_type_id="1" />
+	<md_alert id="521"  name="Symantec Endpoint Protection Manager service" severity="AMBER" data_type_id="1" />
+	<md_alert id="522"  name="The configuration manager for WAS did not initialize" severity="AMBER" data_type_id="1" />
+	<md_alert id="523"  name="Windows Workstation Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="524"  name="Alert Message For Cluster Discovery Connect Status Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="525"  name="APM Windows service stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="526"  name="Asset Intelligence Synchronization Point Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="527"  name="BizTalk Server: Availability Monitor raised an Error on BizTalk Host" severity="AMBER" data_type_id="1" />
+	<md_alert id="528"  name="Cluster Service stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="529"  name="ConfigMgr 2007 Perf Threshold: Site Server Inbox schedule.boxrequests Backlog > 10,000 over 3 hours" severity="AMBER" data_type_id="1" />
+	<md_alert id="530"  name="ConfigMgr 2007 service running: SMS_SITE_COMPONENT_MANAGER" severity="AMBER" data_type_id="1" />
+	<md_alert id="531"  name="ConfigMgr 2007 Status: Collection Evaluator failed to update the membership of a collection" severity="AMBER" data_type_id="1" />
+	<md_alert id="532"  name="ConfigMgr 2007 Status: Database Notification Monitor failed to execute a Site Maintenance task within the scheduled time" severity="AMBER" data_type_id="1" />
+	<md_alert id="533"  name="ConfigMgr 2007 Status: Site Component Manager failed to install the Management Point component because its Microsoft Installer File (MP.MSI) could not install it" severity="AMBER" data_type_id="1" />
+	<md_alert id="534"  name="ConfigMgr 2007 Status: SMS Executive detected that an Autostarted component stopped unexpectedly" severity="AMBER" data_type_id="1" />
+	<md_alert id="535"  name="Could not allocate new page for database . There are no more pages available in filegroup." severity="AMBER" data_type_id="1" />
+	<md_alert id="536"  name="CRITICAL ERROR: A BizTalk subservice has failed while executing a service request" severity="AMBER" data_type_id="1" />
+	<md_alert id="537"  name="Data Access Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="538"  name="Data Warehouse health service availability data synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="539"  name="Database backup should be performed" severity="AMBER" data_type_id="1" />
+	<md_alert id="540"  name="Elasticsearch-service-x64_PROD_NTTA Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="541"  name="Failed to retrieve site state" severity="AMBER" data_type_id="1" />
+	<md_alert id="542"  name="Failed to send notification using server/device" severity="AMBER" data_type_id="1" />
+	<md_alert id="543"  name="Microsoft.SQLServer.2014.AlwaysOn.AutomaticFailoverReadiness" severity="AMBER" data_type_id="1" />
+	<md_alert id="544"  name="Microsoft.SQLServer.2014.AlwaysOn.ClusterStateMonitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="545"  name="Migration error (Warning)" severity="AMBER" data_type_id="1" />
+	<md_alert id="546"  name="MP Sync failed to connect to Data Access Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="547"  name="MSSQL 2014: An error occurred in the Service Broker manager" severity="AMBER" data_type_id="1" />
+	<md_alert id="548"  name="MSSQL 2014: Backup device failed - Operating system error" severity="AMBER" data_type_id="1" />
+	<md_alert id="549"  name="MSSQL 2014: Buffer Cache Hit Ratio is too low" severity="AMBER" data_type_id="1" />
+	<md_alert id="550"  name="MSSQL 2014: Could not write a CHECKPOINT record in database because the log is out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="551"  name="MSSQL 2014: Database is Out of Space" severity="AMBER" data_type_id="1" />
+	<md_alert id="552"  name="MSSQL 2014: Failed to open primary database file" severity="AMBER" data_type_id="1" />
+	<md_alert id="553"  name="Object Health State data collection process unable to store data in the Data Warehouse in a timely manner" severity="AMBER" data_type_id="1" />
+	<md_alert id="554"  name="Operations Manager failed to check the state of a service" severity="AMBER" data_type_id="1" />
+	<md_alert id="555"  name="Operations Manager failed to get LDAP data" severity="AMBER" data_type_id="1" />
+	<md_alert id="556"  name="Ops DB Free Space Low" severity="AMBER" data_type_id="1" />
+	<md_alert id="557"  name="Site server cannot connect to database" severity="AMBER" data_type_id="1" />
+	<md_alert id="558"  name="SQL Server Reporting Services Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="559"  name="SSRS Environment URL is Down" severity="AMBER" data_type_id="1" />
+	<md_alert id="560"  name="TRIMWorkgroup Event - Rule Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="561"  name="Web Application Unavailable: {2}" severity="AMBER" data_type_id="1" />
+	<md_alert id="562"  name="Web Management service is stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="563"  name="WSUS Configuration Manager Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="564"  name="4149 BMC Event Manager mcell_STR_PDPROD_B02 Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="565"  name="AzMan Database connectivity is lost" severity="AMBER" data_type_id="1" />
+	<md_alert id="566"  name="Cannot Connect To SQL Server" severity="AMBER" data_type_id="1" />
+	<md_alert id="567"  name="CioApp3735OrchestratorLog_monitoring" severity="AMBER" data_type_id="1" />
+	<md_alert id="568"  name="Cluster network is down" severity="AMBER" data_type_id="1" />
+	<md_alert id="569"  name="ConfigMgr 2007 service running: SMS Agent Host" severity="AMBER" data_type_id="1" />
+	<md_alert id="570"  name="ConfigMgr 2007 Site Maintenance Tasks: Task failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="571"  name="ConfigMgr 2007 Status: Distribution Manager does not have enough free disk space on the site server to decompress a package" severity="AMBER" data_type_id="1" />
+	<md_alert id="572"  name="ConfigMgr 2007 Status: Distribution Manager does not have enough free disk space to copy a package" severity="AMBER" data_type_id="1" />
+	<md_alert id="573"  name="ConfigMgr 2007 Status: Site Component Manager could not access site system" severity="AMBER" data_type_id="1" />
+	<md_alert id="574"  name="ConfigMgr Site Role Issue" severity="AMBER" data_type_id="1" />
+	<md_alert id="575"  name="Configuration Service Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="576"  name="Content Database Synchronization failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="577"  name="CRITICAL ERROR: A stored procedure failed" severity="AMBER" data_type_id="1" />
+	<md_alert id="578"  name="Data Warehouse maintenance mode synchronization process failed to read state" severity="AMBER" data_type_id="1" />
+	<md_alert id="579"  name="EM Test Alert - Onboarding" severity="AMBER" data_type_id="1" />
+	<md_alert id="580"  name="Error while undoing logged operation in database" severity="AMBER" data_type_id="1" />
+	<md_alert id="581"  name="Event data collection process unable to store data in the Data Warehouse in a timely manner" severity="AMBER" data_type_id="1" />
+	<md_alert id="582"  name="Failed Authentication Attempts Check" severity="AMBER" data_type_id="1" />
+	<md_alert id="583"  name="Failed to perform FTP site discovery" severity="AMBER" data_type_id="1" />
+	<md_alert id="584"  name="Free Space Warning (MB) For Cluster Disk" severity="AMBER" data_type_id="1" />
+	<md_alert id="585"  name="HP Insight Storage Agents failed." severity="AMBER" data_type_id="1" />
+	<md_alert id="586"  name="IIS 8 Application Pool is unavailable" severity="AMBER" data_type_id="1" />
+	<md_alert id="587"  name="Log files are running out of space" severity="AMBER" data_type_id="1" />
+	<md_alert id="588"  name="Management Configuration Service group failed to obtain work item statistics for a period of time" severity="AMBER" data_type_id="1" />
+	<md_alert id="589"  name="Management point status message backlog alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="590"  name="ManagemyRecords - SQLSERVERAGENT Service Monitor" severity="AMBER" data_type_id="1" />
+	<md_alert id="591"  name="MSSQL 2014: CPU Utilization (%) is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="592"  name="MSSQL 2014: Operating System error encountered" severity="AMBER" data_type_id="1" />
+	<md_alert id="593"  name="MSSQL 2014: Thread Count is too high" severity="AMBER" data_type_id="1" />
+	<md_alert id="594"  name="MSSQL 2014: Workflow failed to connect to the target system" severity="AMBER" data_type_id="1" />
+	<md_alert id="595"  name="Network Adapter Connection Health" severity="AMBER" data_type_id="1" />
+	<md_alert id="596"  name="NLB node is no longer part of the cluster" severity="AMBER" data_type_id="1" />
+	<md_alert id="597"  name="Operations Manager Failed to convert performance data" severity="AMBER" data_type_id="1" />
+	<md_alert id="598"  name="Operations Manager failed to run a WMI query" severity="AMBER" data_type_id="1" />
+	<md_alert id="599"  name="Outbox Monitor Not Available" severity="AMBER" data_type_id="1" />
+	<md_alert id="600"  name="PA.Processors.Decisions Service is Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="601"  name="Power Shell Run space Failed to start" severity="AMBER" data_type_id="1" />
+	<md_alert id="602"  name="Quality.Search.Indexer-ProductionNTTA Stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="603"  name="Server Sync Web Service" severity="AMBER" data_type_id="1" />
+	<md_alert id="604"  name="SERVICE UNAVAILABLE: The message engine could not contact the SSO server" severity="AMBER" data_type_id="1" />
+	<md_alert id="605"  name="SMS Agent Host Windows Service Not Running" severity="AMBER" data_type_id="1" />
+	<md_alert id="606"  name="System Center Orchestrator Runbook Server Database Connection Error" severity="AMBER" data_type_id="1" />
+	<md_alert id="607"  name="The Cluster service is shutting down because quorum was lost" severity="AMBER" data_type_id="1" />
+	<md_alert id="608"  name="The Symantec Endpoint Protection Manager Webserver service entered the stopped" severity="AMBER" data_type_id="1" />
+	<md_alert id="609"  name="UNIX/Linux Service Monitor Alert" severity="AMBER" data_type_id="1" />
+	<md_alert id="610"  name="Worker process for application pool encountered an error while trying to read global module configuration" severity="AMBER" data_type_id="1" />	
+	<!-- AppDynamics Alerts -->
+	<md_alert id="611"  name="Business Transaction error rate is high" severity="RED" data_type_id="3" />
+	<md_alert id="612"  name="Business Transaction response time is much higher than normal" severity="RED" data_type_id="3" />
+
+	<!-- AlertGroup 定义 -->
+	<!-- Test -->
+    <cf_alert_group id="1" name="Windows Server Health alerts(Test)" data_type_id="1" />
+    <cf_alert_group id="2" name="MSSQL 2014 alerts(Test)" data_type_id="1" />
+    <cf_alert_group id="3" name="IIS7 alerts(Test)" data_type_id="1" />
+    <cf_alert_group id="4" name="Cluster Health alerts(Test)" data_type_id="1" />
+    <!-- AppDyn -->
+    <cf_alert_group id="5" name="appdynamic_critical_rules" data_type_id="3" />
+    
+    <!-- AlertGroup与Alert的影射关系 -->
+    <!-- Test -->
+    <cf_jt_alert_group_alert  group_id="1" alert_id="1" />
+    <cf_jt_alert_group_alert  group_id="1" alert_id="3" />
+    <cf_jt_alert_group_alert  group_id="1" alert_id="22" />
+    <cf_jt_alert_group_alert  group_id="1" alert_id="26" />
+    <cf_jt_alert_group_alert  group_id="2" alert_id="31" />
+    <cf_jt_alert_group_alert  group_id="2" alert_id="32" />
+    <cf_jt_alert_group_alert  group_id="2" alert_id="33" />
+    <cf_jt_alert_group_alert  group_id="2" alert_id="34" />    
+    <cf_jt_alert_group_alert  group_id="3" alert_id="2" />
+    <cf_jt_alert_group_alert  group_id="3" alert_id="24" />
+    <cf_jt_alert_group_alert  group_id="4" alert_id="7" />
+    <cf_jt_alert_group_alert  group_id="4" alert_id="8" />    
+    <!-- AppDynamics Alert Group Mapping-->
+    <cf_jt_alert_group_alert  group_id="5" alert_id="611" />
+    <cf_jt_alert_group_alert  group_id="5" alert_id="612" />   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dataset>
